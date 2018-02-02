@@ -1,9 +1,0 @@
-[2018-02-02 16:19:06.3517][19A3F9060F71][Error] Falla al intentar enviar correo de confirmación de registro para desarrollo@tax-individual.com.co Failure sending mail.  
-[2018-02-02 16:21:30.2406][19A3F9060F71][Error] Falla al intentar enviar correo de confirmación de registro para desarrollo@tax-individual.com.co Failure sending mail. 
-[2018-02-02 16:23:52.0477][5B1781A1F24C][Error] Falla al intentar enviar correo de confirmación de registro para desarrollo@tax-individual.com.co Failure sending mail. , url: 
-[2018-02-02 16:30:34.9131][7EC587B8C0BA][Error] Falla al intentar enviar correo de confirmación de registro para desarrollo@tax-individual.com.co Failure sending mail. , url:  
-[2018-02-02 16:37:20.0393][7EC587B8C0BA][Error] Falla al intentar enviar correo de confirmación de registro para desarrollo@tax-individual.com.co Failure sending mail., url: , content-type: 
-[2018-02-02 16:52:09.8818][7EC587B8C0BA][Error] Falla al intentar enviar correo de confirmación de registro para desarrollo@tax-individual.com.co Failure sending mail., url: , content-type: 
-[2018-02-02 17:01:32.5859][844E31ECEB35][Error] Falla al intentar enviar correo de confirmación de registro para desarrollo@tax-individual.com.co en http://172.30.239.50/api/v1/user?culture=en Failure sending mail., url:  , content-type: 
-[2018-02-02 17:03:19.9601][844E31ECEB35][Error] Falla al intentar enviar correo de confirmación de registro para desarrollo@tax-individual.com.co en http://172.30.239.50/api/v1/user?culture=en Failure sending mail., url:  , content-type: 
-[2018-02-02 17:05:01.5467][844E31ECEB35][Error] Falla al intentar enviar correo de confirmación de registro para desarrollo@tax-individual.com.co en http://172.30.239.50/api/v1/user?culture=en Failure sending mail., url:  , content-type: 
