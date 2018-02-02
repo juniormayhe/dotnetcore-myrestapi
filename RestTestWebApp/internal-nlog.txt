@@ -1,0 +1,1 @@
+2018-02-02 17:05:01.5467 Trace Opening C:\app\bin\Debug\netcoreapp2.0\logs\RestTestWebApp\2018-02-02.log with allowFileSharedWriting=False
