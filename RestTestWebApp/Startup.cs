@@ -24,33 +24,75 @@ namespace RestTestWebApp
     public class Startup
     {
         public IConfiguration _configuration { get; }
+        public IHostingEnvironment _hostingEnvironment { get; }
 
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
         {
             _configuration = configuration;
+            _hostingEnvironment = hostingEnvironment;
         }
         
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        //// This method gets called by the runtime. Use this method to add services to the container.
+        //public void ConfigureServices(IServiceCollection services)
+        //{
+        //    services.AddMvc();
+
+        //    services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+        //    //make these services available for the application
+        //    services.AddSingleton<IUserService, UserService>();
+
+        //    services.Configure<EmailServiceOptions>(_configuration.GetSection("Email"));
+        //    services.AddSingleton<IEmailService, EmailService>();
+            
+        //}
+
+        public void ConfigureCommonServices(IServiceCollection services)
         {
             services.AddMvc();
 
             services.AddLocalization(options => options.ResourcesPath = "Resources");
+            
+            //configure services with appsettings.json
+            services.Configure<AppSettings>(_configuration.GetSection("AppSettings"));
+            services.Configure<EmailServiceSettings>(_configuration.GetSection("Email"));
 
             //make these services available for the application
             services.AddSingleton<IUserService, UserService>();
-
-            services.Configure<EmailServiceOptions>(_configuration.GetSection("Email"));
-            services.AddSingleton<IEmailService, EmailService>();
-            
+            services.AddEmailService(_hostingEnvironment, _configuration);
+            services.AddRouting();
+            services.AddSession(o =>
+            {
+                o.IdleTimeout = TimeSpan.FromMinutes(30);
+            });
         }
 
-        
+        public void ConfigureDevelopmentServices(IServiceCollection services)
+        {
+            System.Diagnostics.Trace.WriteLine("Using Development Environment");
+            ConfigureCommonServices(services);
+        }
+
+        public void ConfigureStagingServices(IServiceCollection services)
+        {
+            System.Diagnostics.Trace.WriteLine("Using Staging Environment");
+            ConfigureCommonServices(services);
+        }
+
+        public void ConfigureProductionServices(IServiceCollection services)
+        {
+            System.Diagnostics.Trace.WriteLine("Using Production Environment");
+            ConfigureCommonServices(services);
+        }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IOptions<AppSettings> appSettingsSection)
         {
+            AppSettings appSettings = appSettingsSection.Value;
+            System.Diagnostics.Trace.WriteLine($"This appsetting was Injected by netcore: {appSettings.ApplicationTitle}");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -89,6 +131,9 @@ namespace RestTestWebApp
 
             //add Nlog.Web
             app.AddNLogWeb();
+            
+
+            
         }
     }
 }

@@ -9,10 +9,13 @@ using System.Threading.Tasks;
 
 namespace RestTestWebApp.Services
 {
+    /// <summary>
+    /// builtin mail from .NET
+    /// </summary>
     public class EmailService : IEmailService
     {
-        private EmailServiceOptions _emailServiceOptions;
-        public EmailService(IOptions<EmailServiceOptions> emailServiceOptions)
+        private EmailServiceSettings _emailServiceOptions;
+        public EmailService(IOptions<EmailServiceSettings> emailServiceOptions)
         {
             _emailServiceOptions = emailServiceOptions.Value;
         }

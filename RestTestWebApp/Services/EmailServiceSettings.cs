@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace RestTestWebApp.Services
 {
-    public class EmailServiceOptions
+    public class EmailServiceSettings
     {
         public string MailType { get; set; }
         public string MailServer { get; set; }
@@ -16,12 +16,12 @@ namespace RestTestWebApp.Services
         public string RemoteServerAPI { get; set; }
         public string RemoteServerKey { get; set; }
 
-        public EmailServiceOptions()
+        public EmailServiceSettings()
         {
 
         }
 
-        public EmailServiceOptions(string mailType,
+        public EmailServiceSettings(string mailType,
          string mailServer, string mailPort, string useSSL,
          string userId, string password, string remoteServerAPI,
          string remoteServerKey)
