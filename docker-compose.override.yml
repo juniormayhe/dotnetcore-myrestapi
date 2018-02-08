@@ -6,7 +6,12 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "80"
-  driverapi:
+  identityapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+  passengerapi:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
@@ -15,4 +20,6 @@ networks:
   default:
     external:
       name: nat
+
+
 

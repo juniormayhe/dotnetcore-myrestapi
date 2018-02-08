@@ -1,24 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CommonModels;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using NetworkUtils;
 using NLog.Extensions.Logging;
 using NLog.Web;
-using RestTestWebApp.Controllers;
 using RestTestWebApp.Extensions;
 using RestTestWebApp.Services;
-
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using static System.Diagnostics.Trace;
 namespace RestTestWebApp
 {
     public class Startup
@@ -53,8 +49,8 @@ namespace RestTestWebApp
             services.AddMvc();
 
             services.AddLocalization(options => options.ResourcesPath = "Resources");
-            
-            //configure services with appsettings.json
+
+            //load config from appsettings.json
             services.Configure<AppSettings>(_configuration.GetSection("AppSettings"));
             services.Configure<EmailServiceSettings>(_configuration.GetSection("Email"));
 
@@ -90,9 +86,7 @@ namespace RestTestWebApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IOptions<AppSettings> appSettingsSection)
         {
-            AppSettings appSettings = appSettingsSection.Value;
-            System.Diagnostics.Trace.WriteLine($"This appsetting was Injected by netcore: {appSettings.ApplicationTitle}");
-
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -131,9 +125,10 @@ namespace RestTestWebApp
 
             //add Nlog.Web
             app.AddNLogWeb();
-            
 
-            
+            //print in output
+            HostHelper.OutputHostnameInfo(appSettingsSection.Value.ApplicationTitle);
+
         }
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace RestTestWebApp
+﻿namespace CommonModels
 {
     /// <summary>
     /// Holds application settings from appsettings.json
