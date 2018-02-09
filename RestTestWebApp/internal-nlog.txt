@@ -25750,3 +25750,1749 @@
 2018-02-08 17:16:51.9670 Debug Warn => blackhole
 2018-02-08 17:16:51.9670 Debug Error => blackhole
 2018-02-08 17:16:51.9670 Debug Fatal => blackhole
+2018-02-09 11:34:30.8120 Info Loading assembly: NLog.Web.AspNetCore
+2018-02-09 11:34:30.8364 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2018-02-09 11:34:30.9720 Debug Start auto loading, location: c:\.nuget\packages\nlog\5.0.0-beta07\lib\netstandard1.5
+2018-02-09 11:34:30.9720 Debug Auto loading done
+2018-02-09 11:34:30.9866 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2018-02-09 11:34:31.0111 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.0188 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:34:31.0188 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-02-09 11:34:31.0331 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-02-09 11:34:31.0331 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.0331 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:31.0493 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.0493 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:34:31.0493 Trace  Scanning Property Culture '' System.Globalization
+2018-02-09 11:34:31.0631 Trace  Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:34:31.0631 Trace  Scanning SimpleLayout ''''
+2018-02-09 11:34:31.0631 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:31.0631 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:31.0815 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.0815 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:34:31.0815 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.0953 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:34:31.1146 Debug Setting 'FileTarget.name' to 'historico'
+2018-02-09 11:34:31.1146 Debug Setting 'FileTarget.fileName' to '${basedir}\logs\RestTestWebApp\${shortdate}.log'
+2018-02-09 11:34:31.1146 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.1315 Trace Scanning BaseDirLayoutRenderer 'Layout Renderer: ${basedir}'
+2018-02-09 11:34:31.1641 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.1641 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:34:31.1742 Debug Setting 'FileTarget.encoding' to 'utf-8'
+2018-02-09 11:34:31.1742 Debug Setting 'FileTarget.layout' to '[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'
+2018-02-09 11:34:31.1742 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.1933 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:34:31.1933 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.1933 Trace Scanning MachineNameLayoutRenderer 'Layout Renderer: ${machinename}'
+2018-02-09 11:34:31.2079 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.2079 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:31.2079 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.2227 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:34:31.2227 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.2408 Trace Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:34:31.2408 Trace  Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:34:31.2408 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.2568 Trace Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:34:31.2568 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.2568 Trace Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:31.2721 Debug Setting 'AspNetRequestValueLayoutRenderer.Item' to 'queryString'
+2018-02-09 11:34:31.2721 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.2721 Trace Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:31.2721 Debug Setting 'AspNetRequestValueLayoutRenderer.header' to 'Content-Type'
+2018-02-09 11:34:31.2912 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.2912 Trace Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:31.2912 Info Adding target File Target[historico]
+2018-02-09 11:34:31.3058 Debug Registering target historico: NLog.Targets.FileTarget
+2018-02-09 11:34:31.3058 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.3058 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:34:31.3058 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-02-09 11:34:31.3058 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-02-09 11:34:31.3298 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.3298 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:31.3298 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.3472 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:34:31.3472 Trace  Scanning Property Culture '' System.Globalization
+2018-02-09 11:34:31.3472 Trace  Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:34:31.3472 Trace  Scanning SimpleLayout ''''
+2018-02-09 11:34:31.3664 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:31.3664 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:31.3873 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.3994 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:34:31.3994 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:34:31.4230 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:34:31.4399 Debug Setting 'NullTarget.name' to 'blackhole'
+2018-02-09 11:34:31.4399 Info Adding target Null Target[blackhole]
+2018-02-09 11:34:31.4649 Debug Registering target blackhole: NLog.Targets.NullTarget
+2018-02-09 11:34:31.4742 Trace ParseRulesElement
+2018-02-09 11:34:31.4852 Info Configured from an XML element in C:\app\nlog.config...
+2018-02-09 11:34:31.4852 Debug Unused target checking is started... Rule Count: 2, Target Count: 2
+2018-02-09 11:34:31.5072 Debug Unused target checking is completed. Total Rule Count: 2, Total Target Count: 2, Unused Target Count: 0
+2018-02-09 11:34:31.5187 Debug --- NLog configuration dump ---
+2018-02-09 11:34:31.5187 Debug Targets:
+2018-02-09 11:34:31.5379 Debug File Target[historico]
+2018-02-09 11:34:31.5379 Debug Null Target[blackhole]
+2018-02-09 11:34:31.5475 Debug Rules:
+2018-02-09 11:34:31.5475 Debug logNamePattern: (Microsoft.:StartsWith) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ blackhole ]
+2018-02-09 11:34:31.5475 Debug logNamePattern: (:All) levels: [ Warn Error Fatal ] appendTo: [ historico ]
+2018-02-09 11:34:31.5475 Debug --- End of NLog configuration dump ---
+2018-02-09 11:34:31.5680 Trace FindReachableObject<System.Object>:
+2018-02-09 11:34:31.5680 Trace Scanning LoggingRule 'logNamePattern: (Microsoft.:StartsWith) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ blackhole ]'
+2018-02-09 11:34:31.5680 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:34:31.5814 Trace  Scanning NullTarget 'Null Target[blackhole]'
+2018-02-09 11:34:31.5814 Trace   Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2018-02-09 11:34:31.5814 Trace   Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:34:31.5955 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:31.5955 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:34:31.5955 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.5955 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:34:31.6140 Trace     Scanning Property Culture '' System.Globalization
+2018-02-09 11:34:31.6190 Trace     Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:34:31.6190 Trace     Scanning SimpleLayout ''''
+2018-02-09 11:34:31.6190 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:31.6190 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:31.6366 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.6366 Trace    Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:34:31.6366 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.6366 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:34:31.6538 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:34:31.6538 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:34:31.6538 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:34:31.6538 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Warn Error Fatal ] appendTo: [ historico ]'
+2018-02-09 11:34:31.6538 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:34:31.6764 Trace  Scanning FileTarget 'File Target[historico]'
+2018-02-09 11:34:31.6764 Trace   Scanning Property FileName ''${basedir}\logs\RestTestWebApp\${shortdate}.log'' NLog.Layouts
+2018-02-09 11:34:31.6764 Trace   Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:34:31.6903 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:31.6903 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.6903 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:34:31.6903 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.7080 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2018-02-09 11:34:31.7080 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-02-09 11:34:31.7080 Trace   Scanning Property Layout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'' NLog.Layouts
+2018-02-09 11:34:31.7223 Trace   Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:34:31.7266 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:31.7266 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.7266 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:34:31.7266 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.7450 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:31.7450 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.7450 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:34:31.7578 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.7578 Trace    Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:34:31.7578 Trace     Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:34:31.7578 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.7578 Trace    Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:34:31.7817 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.7817 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:31.7817 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:31.7943 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.7943 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:31.7943 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:34:31.8097 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:34:31.8097 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:34:31.8097 Info Found 34 configuration items
+2018-02-09 11:34:31.8097 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:34:31.8288 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:34:31.8288 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:31.8392 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:34:31.8392 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:34:31.8392 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:34:31.8532 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:34:31.8532 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:31.8532 Trace Initializing Layout Renderer: ${aspnet-request-url}
+2018-02-09 11:34:31.8657 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:34:31.8657 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:31.8657 Trace Initializing Layout Renderer: ${exception}
+2018-02-09 11:34:31.8657 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:31.8833 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:34:31.8833 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:31.8833 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:34:31.8833 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:31.9011 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:34:31.9011 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:31.9011 Trace Initializing '[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'
+2018-02-09 11:34:31.9142 Trace FindReachableObject<System.Object>:
+2018-02-09 11:34:31.9142 Trace Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:34:31.9142 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:31.9142 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.9329 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:34:31.9329 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.9448 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:31.9448 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.9448 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:34:31.9620 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.9620 Trace  Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:34:31.9620 Trace   Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:34:31.9620 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.9804 Trace  Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:34:31.9804 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:31.9804 Trace  Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:31.9955 Trace  Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:31.9955 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.0084 Trace  Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:32.0084 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.0084 Trace Initializing Layout Renderer: ${shortdate}
+2018-02-09 11:34:32.0267 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.0267 Trace Initializing '${basedir}\logs\RestTestWebApp\${shortdate}.log'
+2018-02-09 11:34:32.0267 Trace FindReachableObject<System.Object>:
+2018-02-09 11:34:32.0398 Trace Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:34:32.0398 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.0398 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.0398 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:34:32.0579 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.0579 Trace Initializing File Target[historico]
+2018-02-09 11:34:32.0579 Trace FindReachableObject<NLog.Layouts.Layout>:
+2018-02-09 11:34:32.0727 Trace Scanning FileTarget 'File Target[historico]'
+2018-02-09 11:34:32.0727 Trace  Scanning Property FileName ''${basedir}\logs\RestTestWebApp\${shortdate}.log'' NLog.Layouts
+2018-02-09 11:34:32.0727 Trace  Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:34:32.0857 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.0857 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.0857 Trace   Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:34:32.0857 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.1031 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-02-09 11:34:32.1031 Trace  Scanning Property Layout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'' NLog.Layouts
+2018-02-09 11:34:32.1031 Trace  Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:34:32.1168 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.1168 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.1168 Trace   Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:34:32.1168 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.1349 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:32.1349 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.1349 Trace   Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:34:32.1478 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.1478 Trace   Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:34:32.1478 Trace    Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:34:32.1478 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.1653 Trace   Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:34:32.1653 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.1653 Trace   Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:32.1653 Trace   Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:32.1828 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.1828 Trace   Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:32.1828 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2018-02-09 11:34:32.1967 Trace File Target[historico] has 2 layouts
+2018-02-09 11:34:32.2117 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:34:32.2117 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.2117 Trace Initializing Layout Renderer: ${logger}
+2018-02-09 11:34:32.2117 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.2296 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:34:32.2296 Trace Initializing ''
+2018-02-09 11:34:32.2296 Trace FindReachableObject<System.Object>:
+2018-02-09 11:34:32.2423 Trace Scanning SimpleLayout ''''
+2018-02-09 11:34:32.2423 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.2423 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:32.2423 Trace Initializing Layout Renderer: ${uppercase}
+2018-02-09 11:34:32.2601 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.2601 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:34:32.2601 Trace Initializing '${longdate}|${level:uppercase=true}|${logger}|${message}'
+2018-02-09 11:34:32.2728 Trace FindReachableObject<System.Object>:
+2018-02-09 11:34:32.2728 Trace Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:34:32.2728 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.2728 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:34:32.2898 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.2898 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:34:32.2898 Trace   Scanning Property Culture '' System.Globalization
+2018-02-09 11:34:32.2898 Trace   Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:34:32.3082 Trace   Scanning SimpleLayout ''''
+2018-02-09 11:34:32.3082 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.3082 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:32.3082 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.3082 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:34:32.3335 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.3335 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:34:32.3335 Trace Initializing Null Target[blackhole]
+2018-02-09 11:34:32.3499 Trace FindReachableObject<NLog.Layouts.Layout>:
+2018-02-09 11:34:32.3499 Trace Scanning NullTarget 'Null Target[blackhole]'
+2018-02-09 11:34:32.3499 Trace  Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2018-02-09 11:34:32.3639 Trace  Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:34:32.3683 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.3683 Trace   Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:34:32.3683 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.3817 Trace   Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:34:32.3817 Trace    Scanning Property Culture '' System.Globalization
+2018-02-09 11:34:32.3817 Trace    Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:34:32.3964 Trace    Scanning SimpleLayout ''''
+2018-02-09 11:34:32.3964 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.3964 Trace     Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:32.3964 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.4150 Trace   Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:34:32.4150 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.4150 Trace   Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:34:32.4300 Trace Null Target[blackhole] has 2 layouts
+2018-02-09 11:34:32.4300 Trace FindReachableObject<System.Object>:
+2018-02-09 11:34:32.4300 Trace Scanning LoggingRule 'logNamePattern: (Microsoft.:StartsWith) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ blackhole ]'
+2018-02-09 11:34:32.4300 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:34:32.4300 Trace  Scanning NullTarget 'Null Target[blackhole]'
+2018-02-09 11:34:32.4527 Trace   Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2018-02-09 11:34:32.4527 Trace   Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:34:32.4527 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.4665 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:34:32.4665 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.4665 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:34:32.4665 Trace     Scanning Property Culture '' System.Globalization
+2018-02-09 11:34:32.4846 Trace     Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:34:32.4846 Trace     Scanning SimpleLayout ''''
+2018-02-09 11:34:32.4846 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.4846 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:32.5018 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.5058 Trace    Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:34:32.5058 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.5058 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:34:32.5058 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:34:32.5232 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:34:32.5232 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:34:32.5232 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Warn Error Fatal ] appendTo: [ historico ]'
+2018-02-09 11:34:32.5232 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:34:32.5401 Trace  Scanning FileTarget 'File Target[historico]'
+2018-02-09 11:34:32.5401 Trace   Scanning Property FileName ''${basedir}\logs\RestTestWebApp\${shortdate}.log'' NLog.Layouts
+2018-02-09 11:34:32.5401 Trace   Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:34:32.5401 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.5401 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.5619 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:34:32.5619 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.5619 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-02-09 11:34:32.5619 Trace   Scanning Property Layout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'' NLog.Layouts
+2018-02-09 11:34:32.5791 Trace   Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:34:32.5791 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:34:32.5791 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.5791 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:34:32.5964 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.5964 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:34:32.5964 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.5964 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:34:32.6139 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.6182 Trace    Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:34:32.6182 Trace     Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:34:32.6182 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.6310 Trace    Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:34:32.6310 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.6310 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:32.6310 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:32.6487 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:34:32.6487 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:34:32.6487 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2018-02-09 11:34:32.6487 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:34:32.6658 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:34:32.6658 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:34:32.6658 Info Found 34 configuration items
+2018-02-09 11:34:32.6658 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:34:32.6846 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.6846 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:34:32.6846 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:34:32.6969 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.6969 Trace Initializing Layout Renderer: ${aspnet-request-url}
+2018-02-09 11:34:32.6969 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.6969 Trace Initializing Layout Renderer: ${exception}
+2018-02-09 11:34:32.7128 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.7128 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:34:32.7128 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.7128 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:34:32.7302 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.7302 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:34:32.7302 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.7302 Trace Initializing '[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'
+2018-02-09 11:34:32.7466 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.7466 Trace Initializing Layout Renderer: ${shortdate}
+2018-02-09 11:34:32.7466 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.7466 Trace Initializing '${basedir}\logs\RestTestWebApp\${shortdate}.log'
+2018-02-09 11:34:32.7641 Trace Initializing File Target[historico]
+2018-02-09 11:34:32.7641 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:34:32.7641 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.7641 Trace Initializing Layout Renderer: ${logger}
+2018-02-09 11:34:32.7814 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.7814 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:34:32.7814 Trace Initializing ''
+2018-02-09 11:34:32.7814 Trace Initializing Layout Renderer: ${uppercase}
+2018-02-09 11:34:32.7985 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:34:32.7985 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:34:32.7985 Trace Initializing '${longdate}|${level:uppercase=true}|${logger}|${message}'
+2018-02-09 11:34:32.8110 Trace Initializing Null Target[blackhole]
+2018-02-09 11:34:32.8110 Debug Watching path 'C:\app' filter 'nlog.config' for changes.
+2018-02-09 11:34:32.9421 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.ApplicationLifetime by level:
+2018-02-09 11:34:32.9421 Debug Trace => blackhole
+2018-02-09 11:34:32.9421 Debug Debug => blackhole
+2018-02-09 11:34:32.9561 Debug Info => blackhole
+2018-02-09 11:34:32.9604 Debug Warn => blackhole
+2018-02-09 11:34:32.9604 Debug Error => blackhole
+2018-02-09 11:34:32.9604 Debug Fatal => blackhole
+2018-02-09 11:34:32.9604 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv by level:
+2018-02-09 11:34:32.9800 Debug Trace => blackhole
+2018-02-09 11:34:32.9800 Debug Debug => blackhole
+2018-02-09 11:34:32.9800 Debug Info => blackhole
+2018-02-09 11:34:32.9943 Debug Warn => blackhole
+2018-02-09 11:34:32.9943 Debug Error => blackhole
+2018-02-09 11:34:32.9943 Debug Fatal => blackhole
+2018-02-09 11:34:32.9943 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2018-02-09 11:34:33.0130 Debug Trace => blackhole
+2018-02-09 11:34:33.0130 Debug Debug => blackhole
+2018-02-09 11:34:33.0130 Debug Info => blackhole
+2018-02-09 11:34:33.0271 Debug Warn => blackhole
+2018-02-09 11:34:33.0271 Debug Error => blackhole
+2018-02-09 11:34:33.0271 Debug Fatal => blackhole
+2018-02-09 11:34:33.0271 Debug Targets for Microsoft.AspNetCore.DataProtection.TypeForwardingActivator by level:
+2018-02-09 11:34:33.0460 Debug Trace => blackhole
+2018-02-09 11:34:33.0460 Debug Debug => blackhole
+2018-02-09 11:34:33.0627 Debug Info => blackhole
+2018-02-09 11:34:33.0627 Debug Warn => blackhole
+2018-02-09 11:34:33.0627 Debug Error => blackhole
+2018-02-09 11:34:33.0784 Debug Fatal => blackhole
+2018-02-09 11:34:33.0784 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager by level:
+2018-02-09 11:34:33.0784 Debug Trace => blackhole
+2018-02-09 11:34:33.0949 Debug Debug => blackhole
+2018-02-09 11:34:33.0949 Debug Info => blackhole
+2018-02-09 11:34:33.1067 Debug Warn => blackhole
+2018-02-09 11:34:33.1067 Debug Error => blackhole
+2018-02-09 11:34:33.1067 Debug Fatal => blackhole
+2018-02-09 11:34:33.1247 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory by level:
+2018-02-09 11:34:33.1247 Debug Trace => blackhole
+2018-02-09 11:34:33.1247 Debug Debug => blackhole
+2018-02-09 11:34:33.1247 Debug Info => blackhole
+2018-02-09 11:34:33.1415 Debug Warn => blackhole
+2018-02-09 11:34:33.1415 Debug Error => blackhole
+2018-02-09 11:34:33.1415 Debug Fatal => blackhole
+2018-02-09 11:34:33.1545 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory by level:
+2018-02-09 11:34:33.1545 Debug Trace => blackhole
+2018-02-09 11:34:33.1545 Debug Debug => blackhole
+2018-02-09 11:34:33.1545 Debug Info => blackhole
+2018-02-09 11:34:33.1545 Debug Warn => blackhole
+2018-02-09 11:34:33.1767 Debug Error => blackhole
+2018-02-09 11:34:33.1767 Debug Fatal => blackhole
+2018-02-09 11:34:33.1767 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory by level:
+2018-02-09 11:34:33.1910 Debug Trace => blackhole
+2018-02-09 11:34:33.1910 Debug Debug => blackhole
+2018-02-09 11:34:33.1910 Debug Info => blackhole
+2018-02-09 11:34:33.1910 Debug Warn => blackhole
+2018-02-09 11:34:33.2094 Debug Error => blackhole
+2018-02-09 11:34:33.2094 Debug Fatal => blackhole
+2018-02-09 11:34:33.2094 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor by level:
+2018-02-09 11:34:33.2094 Debug Trace => blackhole
+2018-02-09 11:34:33.2275 Debug Debug => blackhole
+2018-02-09 11:34:33.2275 Debug Info => blackhole
+2018-02-09 11:34:33.2275 Debug Warn => blackhole
+2018-02-09 11:34:33.2407 Debug Error => blackhole
+2018-02-09 11:34:33.2407 Debug Fatal => blackhole
+2018-02-09 11:34:33.2407 Debug Targets for Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository by level:
+2018-02-09 11:34:33.2407 Debug Trace => blackhole
+2018-02-09 11:34:33.2578 Debug Debug => blackhole
+2018-02-09 11:34:33.2578 Debug Info => blackhole
+2018-02-09 11:34:33.2578 Debug Warn => blackhole
+2018-02-09 11:34:33.2578 Debug Error => blackhole
+2018-02-09 11:34:33.2748 Debug Fatal => blackhole
+2018-02-09 11:34:33.2748 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver by level:
+2018-02-09 11:34:33.2748 Debug Trace => blackhole
+2018-02-09 11:34:33.2748 Debug Debug => blackhole
+2018-02-09 11:34:33.2924 Debug Info => blackhole
+2018-02-09 11:34:33.2924 Debug Warn => blackhole
+2018-02-09 11:34:33.2924 Debug Error => blackhole
+2018-02-09 11:34:33.2924 Debug Fatal => blackhole
+2018-02-09 11:34:33.3099 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider by level:
+2018-02-09 11:34:33.3099 Debug Trace => blackhole
+2018-02-09 11:34:33.3099 Debug Debug => blackhole
+2018-02-09 11:34:33.3099 Debug Info => blackhole
+2018-02-09 11:34:33.3272 Debug Warn => blackhole
+2018-02-09 11:34:33.3272 Debug Error => blackhole
+2018-02-09 11:34:33.3272 Debug Fatal => blackhole
+2018-02-09 11:34:33.3272 Debug Targets for Microsoft.AspNetCore.DataProtection.Internal.DataProtectionStartupFilter by level:
+2018-02-09 11:34:33.3458 Debug Trace => blackhole
+2018-02-09 11:34:33.3458 Debug Debug => blackhole
+2018-02-09 11:34:33.3458 Debug Info => blackhole
+2018-02-09 11:34:33.3595 Debug Warn => blackhole
+2018-02-09 11:34:33.3595 Debug Error => blackhole
+2018-02-09 11:34:33.3595 Debug Fatal => blackhole
+2018-02-09 11:34:33.3595 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor by level:
+2018-02-09 11:34:33.3595 Debug Trace => blackhole
+2018-02-09 11:34:33.3805 Debug Debug => blackhole
+2018-02-09 11:34:33.3805 Debug Info => blackhole
+2018-02-09 11:34:33.3805 Debug Warn => blackhole
+2018-02-09 11:34:33.3805 Debug Error => blackhole
+2018-02-09 11:34:33.3970 Debug Fatal => blackhole
+2018-02-09 11:34:33.3970 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonPatchInputFormatter by level:
+2018-02-09 11:34:33.3970 Debug Trace => blackhole
+2018-02-09 11:34:33.3970 Debug Debug => blackhole
+2018-02-09 11:34:33.4145 Debug Info => blackhole
+2018-02-09 11:34:33.4145 Debug Warn => blackhole
+2018-02-09 11:34:33.4145 Debug Error => blackhole
+2018-02-09 11:34:33.4145 Debug Fatal => blackhole
+2018-02-09 11:34:33.4314 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter by level:
+2018-02-09 11:34:33.4314 Debug Trace => blackhole
+2018-02-09 11:34:33.4314 Debug Debug => blackhole
+2018-02-09 11:34:33.4314 Debug Info => blackhole
+2018-02-09 11:34:33.4516 Debug Warn => blackhole
+2018-02-09 11:34:33.4516 Debug Error => blackhole
+2018-02-09 11:34:33.4516 Debug Fatal => blackhole
+2018-02-09 11:34:33.4667 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.RazorProjectPageRouteModelProvider by level:
+2018-02-09 11:34:33.4667 Debug Trace => blackhole
+2018-02-09 11:34:33.4667 Debug Debug => blackhole
+2018-02-09 11:34:33.4802 Debug Info => blackhole
+2018-02-09 11:34:33.4802 Debug Warn => blackhole
+2018-02-09 11:34:33.4802 Debug Error => blackhole
+2018-02-09 11:34:33.4802 Debug Fatal => blackhole
+2018-02-09 11:34:33.4979 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker by level:
+2018-02-09 11:34:33.4979 Debug Trace => blackhole
+2018-02-09 11:34:33.4979 Debug Debug => blackhole
+2018-02-09 11:34:33.4979 Debug Info => blackhole
+2018-02-09 11:34:33.4979 Debug Warn => blackhole
+2018-02-09 11:34:33.5205 Debug Error => blackhole
+2018-02-09 11:34:33.5205 Debug Fatal => blackhole
+2018-02-09 11:34:33.5205 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler by level:
+2018-02-09 11:34:33.5205 Debug Trace => blackhole
+2018-02-09 11:34:33.5383 Debug Debug => blackhole
+2018-02-09 11:34:33.5383 Debug Info => blackhole
+2018-02-09 11:34:33.5383 Debug Warn => blackhole
+2018-02-09 11:34:33.5510 Debug Error => blackhole
+2018-02-09 11:34:33.5510 Debug Fatal => blackhole
+2018-02-09 11:34:33.5510 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector by level:
+2018-02-09 11:34:33.5510 Debug Trace => blackhole
+2018-02-09 11:34:33.5683 Debug Debug => blackhole
+2018-02-09 11:34:33.5683 Debug Info => blackhole
+2018-02-09 11:34:33.5683 Debug Warn => blackhole
+2018-02-09 11:34:33.5683 Debug Error => blackhole
+2018-02-09 11:34:33.5842 Debug Fatal => blackhole
+2018-02-09 11:34:33.5842 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider by level:
+2018-02-09 11:34:33.5842 Debug Trace => blackhole
+2018-02-09 11:34:33.5842 Debug Debug => blackhole
+2018-02-09 11:34:33.6017 Debug Info => blackhole
+2018-02-09 11:34:33.6017 Debug Warn => blackhole
+2018-02-09 11:34:33.6017 Debug Error => blackhole
+2018-02-09 11:34:33.6017 Debug Fatal => blackhole
+2018-02-09 11:34:33.6017 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker by level:
+2018-02-09 11:34:33.6224 Debug Trace => blackhole
+2018-02-09 11:34:33.6224 Debug Debug => blackhole
+2018-02-09 11:34:33.6224 Debug Info => blackhole
+2018-02-09 11:34:33.6224 Debug Warn => blackhole
+2018-02-09 11:34:33.6394 Debug Error => blackhole
+2018-02-09 11:34:33.6394 Debug Fatal => blackhole
+2018-02-09 11:34:33.6394 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ActionSelector by level:
+2018-02-09 11:34:33.6394 Debug Trace => blackhole
+2018-02-09 11:34:33.6567 Debug Debug => blackhole
+2018-02-09 11:34:33.6567 Debug Info => blackhole
+2018-02-09 11:34:33.6567 Debug Warn => blackhole
+2018-02-09 11:34:33.6567 Debug Error => blackhole
+2018-02-09 11:34:33.6735 Debug Fatal => blackhole
+2018-02-09 11:34:33.6779 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.MvcRouteHandler by level:
+2018-02-09 11:34:33.6779 Debug Trace => blackhole
+2018-02-09 11:34:33.6779 Debug Debug => blackhole
+2018-02-09 11:34:33.6779 Debug Info => blackhole
+2018-02-09 11:34:33.6948 Debug Warn => blackhole
+2018-02-09 11:34:33.6948 Debug Error => blackhole
+2018-02-09 11:34:33.6948 Debug Fatal => blackhole
+2018-02-09 11:34:33.7442 Debug Targets for Microsoft.AspNetCore.Builder.RouterMiddleware by level:
+2018-02-09 11:34:33.7442 Debug Trace => blackhole
+2018-02-09 11:34:33.7442 Debug Debug => blackhole
+2018-02-09 11:34:33.7576 Debug Info => blackhole
+2018-02-09 11:34:33.7576 Debug Warn => blackhole
+2018-02-09 11:34:33.7576 Debug Error => blackhole
+2018-02-09 11:34:33.7576 Debug Fatal => blackhole
+2018-02-09 11:34:33.7770 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
+2018-02-09 11:34:33.7770 Debug Trace => blackhole
+2018-02-09 11:34:33.7770 Debug Debug => blackhole
+2018-02-09 11:34:33.7906 Debug Info => blackhole
+2018-02-09 11:34:33.7906 Debug Warn => blackhole
+2018-02-09 11:34:33.7906 Debug Error => blackhole
+2018-02-09 11:34:33.8043 Debug Fatal => blackhole
+2018-02-09 11:34:33.8043 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.WebHost by level:
+2018-02-09 11:34:33.8043 Debug Trace => blackhole
+2018-02-09 11:34:33.8202 Debug Debug => blackhole
+2018-02-09 11:34:33.8202 Debug Info => blackhole
+2018-02-09 11:34:33.8202 Debug Warn => blackhole
+2018-02-09 11:34:33.8202 Debug Error => blackhole
+2018-02-09 11:34:33.8370 Debug Fatal => blackhole
+2018-02-09 11:34:33.8370 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor by level:
+2018-02-09 11:34:33.8529 Debug Trace => blackhole
+2018-02-09 11:34:33.8529 Debug Debug => blackhole
+2018-02-09 11:34:33.8529 Debug Info => blackhole
+2018-02-09 11:34:33.8659 Debug Warn => blackhole
+2018-02-09 11:34:33.8659 Debug Error => blackhole
+2018-02-09 11:34:33.8659 Debug Fatal => blackhole
+2018-02-09 11:34:35.0994 Debug Targets for Microsoft.AspNetCore.Routing.Tree.TreeRouter by level:
+2018-02-09 11:34:35.1094 Debug Trace => blackhole
+2018-02-09 11:34:35.1094 Debug Debug => blackhole
+2018-02-09 11:34:35.1290 Debug Info => blackhole
+2018-02-09 11:34:35.1290 Debug Warn => blackhole
+2018-02-09 11:34:35.1430 Debug Error => blackhole
+2018-02-09 11:34:35.1430 Debug Fatal => blackhole
+2018-02-09 11:34:35.1694 Debug Targets for Microsoft.AspNetCore.Routing.RouteConstraintMatcher by level:
+2018-02-09 11:34:35.1772 Debug Trace => blackhole
+2018-02-09 11:34:35.1772 Debug Debug => blackhole
+2018-02-09 11:34:35.1772 Debug Info => blackhole
+2018-02-09 11:34:35.1918 Debug Warn => blackhole
+2018-02-09 11:34:35.1918 Debug Error => blackhole
+2018-02-09 11:34:35.1918 Debug Fatal => blackhole
+2018-02-09 11:34:35.2242 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler by level:
+2018-02-09 11:34:35.2362 Debug Trace => blackhole
+2018-02-09 11:34:35.2362 Debug Debug => blackhole
+2018-02-09 11:34:35.2362 Debug Info => blackhole
+2018-02-09 11:34:35.2563 Debug Warn => blackhole
+2018-02-09 11:34:35.2563 Debug Error => blackhole
+2018-02-09 11:34:35.2710 Debug Fatal => blackhole
+2018-02-09 11:34:35.3455 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor by level:
+2018-02-09 11:34:35.3455 Debug Trace => blackhole
+2018-02-09 11:34:35.3455 Debug Debug => blackhole
+2018-02-09 11:34:35.3455 Debug Info => blackhole
+2018-02-09 11:34:35.3640 Debug Warn => blackhole
+2018-02-09 11:34:35.3640 Debug Error => blackhole
+2018-02-09 11:34:35.3640 Debug Fatal => blackhole
+2018-02-09 11:38:17.6647 Info Loading assembly: NLog.Web.AspNetCore
+2018-02-09 11:38:17.7011 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2018-02-09 11:38:17.7976 Debug Start auto loading, location: c:\.nuget\packages\nlog\5.0.0-beta07\lib\netstandard1.5
+2018-02-09 11:38:17.7976 Debug Auto loading done
+2018-02-09 11:38:17.8098 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2018-02-09 11:38:17.8367 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:17.8462 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:38:17.8548 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-02-09 11:38:17.8548 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-02-09 11:38:17.8548 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:17.8548 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:17.8756 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:17.8756 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:38:17.8756 Trace  Scanning Property Culture '' System.Globalization
+2018-02-09 11:38:17.8888 Trace  Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:38:17.8888 Trace  Scanning SimpleLayout ''''
+2018-02-09 11:38:17.8888 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:17.8888 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:17.9057 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:17.9057 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:38:17.9057 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:17.9057 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:38:17.9377 Debug Setting 'FileTarget.name' to 'historico'
+2018-02-09 11:38:17.9377 Debug Setting 'FileTarget.fileName' to '${basedir}\logs\RestTestWebApp\${shortdate}.log'
+2018-02-09 11:38:17.9377 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:17.9548 Trace Scanning BaseDirLayoutRenderer 'Layout Renderer: ${basedir}'
+2018-02-09 11:38:17.9750 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:17.9750 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:38:17.9849 Debug Setting 'FileTarget.encoding' to 'utf-8'
+2018-02-09 11:38:17.9849 Debug Setting 'FileTarget.layout' to '[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'
+2018-02-09 11:38:17.9940 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:17.9940 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:38:17.9940 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.0068 Trace Scanning MachineNameLayoutRenderer 'Layout Renderer: ${machinename}'
+2018-02-09 11:38:18.0068 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.0068 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:18.0068 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.0249 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:38:18.0388 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.0388 Trace Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:38:18.0388 Trace  Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:38:18.0540 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.0540 Trace Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:38:18.0540 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.0699 Trace Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.0699 Debug Setting 'AspNetRequestValueLayoutRenderer.Item' to 'queryString'
+2018-02-09 11:38:18.0699 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.0874 Trace Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.0874 Debug Setting 'AspNetRequestValueLayoutRenderer.header' to 'Content-Type'
+2018-02-09 11:38:18.0874 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.1053 Trace Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.1053 Info Adding target File Target[historico]
+2018-02-09 11:38:18.1053 Debug Registering target historico: NLog.Targets.FileTarget
+2018-02-09 11:38:18.1222 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.1222 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:38:18.1222 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-02-09 11:38:18.1359 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-02-09 11:38:18.1359 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.1359 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:18.1359 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.1549 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:38:18.1549 Trace  Scanning Property Culture '' System.Globalization
+2018-02-09 11:38:18.1549 Trace  Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:38:18.1687 Trace  Scanning SimpleLayout ''''
+2018-02-09 11:38:18.1687 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:18.1687 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:18.1855 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.1855 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:38:18.1855 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:38:18.2016 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:38:18.2134 Debug Setting 'NullTarget.name' to 'blackhole'
+2018-02-09 11:38:18.2134 Info Adding target Null Target[blackhole]
+2018-02-09 11:38:18.2310 Debug Registering target blackhole: NLog.Targets.NullTarget
+2018-02-09 11:38:18.2310 Trace ParseRulesElement
+2018-02-09 11:38:18.2450 Info Configured from an XML element in C:\app\nlog.config...
+2018-02-09 11:38:18.2450 Debug Unused target checking is started... Rule Count: 2, Target Count: 2
+2018-02-09 11:38:18.2450 Debug Unused target checking is completed. Total Rule Count: 2, Total Target Count: 2, Unused Target Count: 0
+2018-02-09 11:38:18.2669 Debug --- NLog configuration dump ---
+2018-02-09 11:38:18.2669 Debug Targets:
+2018-02-09 11:38:18.2758 Debug File Target[historico]
+2018-02-09 11:38:18.2758 Debug Null Target[blackhole]
+2018-02-09 11:38:18.2758 Debug Rules:
+2018-02-09 11:38:18.2758 Debug logNamePattern: (Microsoft.:StartsWith) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ blackhole ]
+2018-02-09 11:38:18.2949 Debug logNamePattern: (:All) levels: [ Warn Error Fatal ] appendTo: [ historico ]
+2018-02-09 11:38:18.2949 Debug --- End of NLog configuration dump ---
+2018-02-09 11:38:18.2949 Trace FindReachableObject<System.Object>:
+2018-02-09 11:38:18.3109 Trace Scanning LoggingRule 'logNamePattern: (Microsoft.:StartsWith) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ blackhole ]'
+2018-02-09 11:38:18.3109 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:38:18.3109 Trace  Scanning NullTarget 'Null Target[blackhole]'
+2018-02-09 11:38:18.3246 Trace   Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2018-02-09 11:38:18.3246 Trace   Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:38:18.3246 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:18.3394 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:38:18.3394 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.3394 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:38:18.3394 Trace     Scanning Property Culture '' System.Globalization
+2018-02-09 11:38:18.3574 Trace     Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:38:18.3574 Trace     Scanning SimpleLayout ''''
+2018-02-09 11:38:18.3574 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:18.3710 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:18.3710 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.3710 Trace    Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:38:18.3710 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.3883 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:38:18.3883 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:38:18.3883 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:38:18.4027 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:38:18.4027 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Warn Error Fatal ] appendTo: [ historico ]'
+2018-02-09 11:38:18.4027 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:38:18.4027 Trace  Scanning FileTarget 'File Target[historico]'
+2018-02-09 11:38:18.4208 Trace   Scanning Property FileName ''${basedir}\logs\RestTestWebApp\${shortdate}.log'' NLog.Layouts
+2018-02-09 11:38:18.4208 Trace   Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:38:18.4208 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:18.4336 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.4336 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:38:18.4336 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.4336 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2018-02-09 11:38:18.4523 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-02-09 11:38:18.4523 Trace   Scanning Property Layout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'' NLog.Layouts
+2018-02-09 11:38:18.4523 Trace   Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:38:18.4523 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:18.4693 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.4693 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:38:18.4693 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.4693 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:18.4869 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.4869 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:38:18.4869 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.4869 Trace    Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:38:18.5069 Trace     Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:38:18.5069 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.5069 Trace    Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:38:18.5220 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.5220 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.5220 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.5371 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.5371 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.5371 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:38:18.5371 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:38:18.5555 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:38:18.5555 Info Found 34 configuration items
+2018-02-09 11:38:18.5555 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:38:18.5704 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:38:18.5704 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:18.5704 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:38:18.5704 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:38:18.5704 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:38:18.5933 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:38:18.5933 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:18.5933 Trace Initializing Layout Renderer: ${aspnet-request-url}
+2018-02-09 11:38:18.6067 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:38:18.6067 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:18.6067 Trace Initializing Layout Renderer: ${exception}
+2018-02-09 11:38:18.6067 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:18.6243 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:38:18.6243 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:18.6243 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:38:18.6243 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:18.6415 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:38:18.6415 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:18.6415 Trace Initializing '[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'
+2018-02-09 11:38:18.6415 Trace FindReachableObject<System.Object>:
+2018-02-09 11:38:18.6594 Trace Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:38:18.6594 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:18.6594 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.6594 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:38:18.6763 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.6763 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:18.6763 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.6763 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:38:18.6933 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.6933 Trace  Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:38:18.6933 Trace   Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:38:18.7082 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.7082 Trace  Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:38:18.7082 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.7283 Trace  Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.7283 Trace  Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.7397 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.7397 Trace  Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.7549 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:18.7549 Trace Initializing Layout Renderer: ${shortdate}
+2018-02-09 11:38:18.7549 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:18.7675 Trace Initializing '${basedir}\logs\RestTestWebApp\${shortdate}.log'
+2018-02-09 11:38:18.7675 Trace FindReachableObject<System.Object>:
+2018-02-09 11:38:18.7675 Trace Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:38:18.7675 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:18.7846 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.7846 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:38:18.7846 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.7986 Trace Initializing File Target[historico]
+2018-02-09 11:38:18.7986 Trace FindReachableObject<NLog.Layouts.Layout>:
+2018-02-09 11:38:18.8148 Trace Scanning FileTarget 'File Target[historico]'
+2018-02-09 11:38:18.8148 Trace  Scanning Property FileName ''${basedir}\logs\RestTestWebApp\${shortdate}.log'' NLog.Layouts
+2018-02-09 11:38:18.8148 Trace  Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:38:18.8299 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:18.8299 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.8299 Trace   Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:38:18.8499 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.8499 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-02-09 11:38:18.8613 Trace  Scanning Property Layout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'' NLog.Layouts
+2018-02-09 11:38:18.8613 Trace  Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:38:18.8613 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:18.8812 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.8812 Trace   Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:38:18.8955 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.8955 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:18.8955 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.9114 Trace   Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:38:18.9114 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.9114 Trace   Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:38:18.9248 Trace    Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:38:18.9248 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.9248 Trace   Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:38:18.9393 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.9393 Trace   Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.9393 Trace   Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.9393 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:18.9570 Trace   Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:18.9570 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2018-02-09 11:38:18.9570 Trace File Target[historico] has 2 layouts
+2018-02-09 11:38:18.9711 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:38:18.9711 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:18.9898 Trace Initializing Layout Renderer: ${logger}
+2018-02-09 11:38:18.9898 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:18.9898 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:38:18.9898 Trace Initializing ''
+2018-02-09 11:38:19.0082 Trace FindReachableObject<System.Object>:
+2018-02-09 11:38:19.0082 Trace Scanning SimpleLayout ''''
+2018-02-09 11:38:19.0082 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:19.0207 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:19.0248 Trace Initializing Layout Renderer: ${uppercase}
+2018-02-09 11:38:19.0248 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.0248 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:38:19.0371 Trace Initializing '${longdate}|${level:uppercase=true}|${logger}|${message}'
+2018-02-09 11:38:19.0371 Trace FindReachableObject<System.Object>:
+2018-02-09 11:38:19.0371 Trace Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:38:19.0371 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:19.0533 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:38:19.0533 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.0533 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:38:19.0533 Trace   Scanning Property Culture '' System.Globalization
+2018-02-09 11:38:19.0708 Trace   Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:38:19.0708 Trace   Scanning SimpleLayout ''''
+2018-02-09 11:38:19.0708 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:19.0708 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:19.0878 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.0878 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:38:19.0878 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.0878 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:38:19.0878 Trace Initializing Null Target[blackhole]
+2018-02-09 11:38:19.1109 Trace FindReachableObject<NLog.Layouts.Layout>:
+2018-02-09 11:38:19.1109 Trace Scanning NullTarget 'Null Target[blackhole]'
+2018-02-09 11:38:19.1109 Trace  Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2018-02-09 11:38:19.1109 Trace  Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:38:19.1278 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:19.1278 Trace   Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:38:19.1278 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.1278 Trace   Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:38:19.1448 Trace    Scanning Property Culture '' System.Globalization
+2018-02-09 11:38:19.1448 Trace    Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:38:19.1448 Trace    Scanning SimpleLayout ''''
+2018-02-09 11:38:19.1448 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:19.1627 Trace     Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:19.1627 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.1627 Trace   Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:38:19.1627 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.1803 Trace   Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:38:19.1803 Trace Null Target[blackhole] has 2 layouts
+2018-02-09 11:38:19.1803 Trace FindReachableObject<System.Object>:
+2018-02-09 11:38:19.1803 Trace Scanning LoggingRule 'logNamePattern: (Microsoft.:StartsWith) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ blackhole ]'
+2018-02-09 11:38:19.1973 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:38:19.1973 Trace  Scanning NullTarget 'Null Target[blackhole]'
+2018-02-09 11:38:19.1973 Trace   Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2018-02-09 11:38:19.1973 Trace   Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:38:19.1973 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:19.2181 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:38:19.2181 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.2181 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:38:19.2181 Trace     Scanning Property Culture '' System.Globalization
+2018-02-09 11:38:19.2351 Trace     Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:38:19.2351 Trace     Scanning SimpleLayout ''''
+2018-02-09 11:38:19.2435 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:19.2435 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:19.2435 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.2566 Trace    Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:38:19.2566 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.2566 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:38:19.2566 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:38:19.2737 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:38:19.2737 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:38:19.2737 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Warn Error Fatal ] appendTo: [ historico ]'
+2018-02-09 11:38:19.2737 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:38:19.2737 Trace  Scanning FileTarget 'File Target[historico]'
+2018-02-09 11:38:19.2952 Trace   Scanning Property FileName ''${basedir}\logs\RestTestWebApp\${shortdate}.log'' NLog.Layouts
+2018-02-09 11:38:19.2952 Trace   Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:38:19.2952 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:19.2952 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.3120 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:38:19.3120 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.3120 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-02-09 11:38:19.3245 Trace   Scanning Property Layout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'' NLog.Layouts
+2018-02-09 11:38:19.3245 Trace   Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:38:19.3245 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:38:19.3245 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.3424 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:38:19.3424 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.3424 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:38:19.3424 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.3424 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:38:19.3640 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.3640 Trace    Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:38:19.3640 Trace     Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:38:19.3640 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.3811 Trace    Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:38:19.3811 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.3811 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:19.3811 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:19.3978 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:38:19.3978 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:38:19.3978 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2018-02-09 11:38:19.3978 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:38:19.4144 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:38:19.4144 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:38:19.4144 Info Found 34 configuration items
+2018-02-09 11:38:19.4144 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:38:19.4144 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.4360 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:38:19.4360 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:38:19.4360 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.4360 Trace Initializing Layout Renderer: ${aspnet-request-url}
+2018-02-09 11:38:19.4536 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.4536 Trace Initializing Layout Renderer: ${exception}
+2018-02-09 11:38:19.4624 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.4624 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:38:19.4624 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.4758 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:38:19.4758 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.4758 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:38:19.4758 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.4929 Trace Initializing '[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'
+2018-02-09 11:38:19.4929 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.4929 Trace Initializing Layout Renderer: ${shortdate}
+2018-02-09 11:38:19.4929 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.4929 Trace Initializing '${basedir}\logs\RestTestWebApp\${shortdate}.log'
+2018-02-09 11:38:19.5143 Trace Initializing File Target[historico]
+2018-02-09 11:38:19.5143 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:38:19.5143 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.5143 Trace Initializing Layout Renderer: ${logger}
+2018-02-09 11:38:19.5314 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.5314 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:38:19.5314 Trace Initializing ''
+2018-02-09 11:38:19.5314 Trace Initializing Layout Renderer: ${uppercase}
+2018-02-09 11:38:19.5314 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:38:19.5523 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:38:19.5523 Trace Initializing '${longdate}|${level:uppercase=true}|${logger}|${message}'
+2018-02-09 11:38:19.5523 Trace Initializing Null Target[blackhole]
+2018-02-09 11:38:19.5724 Debug Watching path 'C:\app' filter 'nlog.config' for changes.
+2018-02-09 11:38:19.6260 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.ApplicationLifetime by level:
+2018-02-09 11:38:19.6312 Debug Trace => blackhole
+2018-02-09 11:38:19.6312 Debug Debug => blackhole
+2018-02-09 11:38:19.6312 Debug Info => blackhole
+2018-02-09 11:38:19.6460 Debug Warn => blackhole
+2018-02-09 11:38:19.6460 Debug Error => blackhole
+2018-02-09 11:38:19.6579 Debug Fatal => blackhole
+2018-02-09 11:38:19.6579 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv by level:
+2018-02-09 11:38:19.6723 Debug Trace => blackhole
+2018-02-09 11:38:19.6723 Debug Debug => blackhole
+2018-02-09 11:38:19.6723 Debug Info => blackhole
+2018-02-09 11:38:19.6852 Debug Warn => blackhole
+2018-02-09 11:38:19.6852 Debug Error => blackhole
+2018-02-09 11:38:19.6852 Debug Fatal => blackhole
+2018-02-09 11:38:19.6852 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2018-02-09 11:38:19.7035 Debug Trace => blackhole
+2018-02-09 11:38:19.7035 Debug Debug => blackhole
+2018-02-09 11:38:19.7035 Debug Info => blackhole
+2018-02-09 11:38:19.7161 Debug Warn => blackhole
+2018-02-09 11:38:19.7161 Debug Error => blackhole
+2018-02-09 11:38:19.7161 Debug Fatal => blackhole
+2018-02-09 11:38:19.7161 Debug Targets for Microsoft.AspNetCore.DataProtection.TypeForwardingActivator by level:
+2018-02-09 11:38:19.7338 Debug Trace => blackhole
+2018-02-09 11:38:19.7338 Debug Debug => blackhole
+2018-02-09 11:38:19.7338 Debug Info => blackhole
+2018-02-09 11:38:19.7338 Debug Warn => blackhole
+2018-02-09 11:38:19.7510 Debug Error => blackhole
+2018-02-09 11:38:19.7510 Debug Fatal => blackhole
+2018-02-09 11:38:19.7510 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager by level:
+2018-02-09 11:38:19.7643 Debug Trace => blackhole
+2018-02-09 11:38:19.7643 Debug Debug => blackhole
+2018-02-09 11:38:19.7643 Debug Info => blackhole
+2018-02-09 11:38:19.7643 Debug Warn => blackhole
+2018-02-09 11:38:19.7821 Debug Error => blackhole
+2018-02-09 11:38:19.7821 Debug Fatal => blackhole
+2018-02-09 11:38:19.7821 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory by level:
+2018-02-09 11:38:19.7821 Debug Trace => blackhole
+2018-02-09 11:38:19.7999 Debug Debug => blackhole
+2018-02-09 11:38:19.7999 Debug Info => blackhole
+2018-02-09 11:38:19.7999 Debug Warn => blackhole
+2018-02-09 11:38:19.7999 Debug Error => blackhole
+2018-02-09 11:38:19.8173 Debug Fatal => blackhole
+2018-02-09 11:38:19.8213 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory by level:
+2018-02-09 11:38:19.8213 Debug Trace => blackhole
+2018-02-09 11:38:19.8213 Debug Debug => blackhole
+2018-02-09 11:38:19.8339 Debug Info => blackhole
+2018-02-09 11:38:19.8339 Debug Warn => blackhole
+2018-02-09 11:38:19.8339 Debug Error => blackhole
+2018-02-09 11:38:19.8339 Debug Fatal => blackhole
+2018-02-09 11:38:19.8512 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory by level:
+2018-02-09 11:38:19.8512 Debug Trace => blackhole
+2018-02-09 11:38:19.8512 Debug Debug => blackhole
+2018-02-09 11:38:19.8512 Debug Info => blackhole
+2018-02-09 11:38:19.8693 Debug Warn => blackhole
+2018-02-09 11:38:19.8693 Debug Error => blackhole
+2018-02-09 11:38:19.8693 Debug Fatal => blackhole
+2018-02-09 11:38:19.8693 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor by level:
+2018-02-09 11:38:19.8870 Debug Trace => blackhole
+2018-02-09 11:38:19.8870 Debug Debug => blackhole
+2018-02-09 11:38:19.8870 Debug Info => blackhole
+2018-02-09 11:38:19.9053 Debug Warn => blackhole
+2018-02-09 11:38:19.9053 Debug Error => blackhole
+2018-02-09 11:38:19.9053 Debug Fatal => blackhole
+2018-02-09 11:38:19.9211 Debug Targets for Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository by level:
+2018-02-09 11:38:19.9211 Debug Trace => blackhole
+2018-02-09 11:38:19.9211 Debug Debug => blackhole
+2018-02-09 11:38:19.9211 Debug Info => blackhole
+2018-02-09 11:38:19.9394 Debug Warn => blackhole
+2018-02-09 11:38:19.9394 Debug Error => blackhole
+2018-02-09 11:38:19.9394 Debug Fatal => blackhole
+2018-02-09 11:38:19.9394 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver by level:
+2018-02-09 11:38:19.9572 Debug Trace => blackhole
+2018-02-09 11:38:19.9572 Debug Debug => blackhole
+2018-02-09 11:38:19.9572 Debug Info => blackhole
+2018-02-09 11:38:19.9760 Debug Warn => blackhole
+2018-02-09 11:38:19.9760 Debug Error => blackhole
+2018-02-09 11:38:19.9946 Debug Fatal => blackhole
+2018-02-09 11:38:19.9946 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider by level:
+2018-02-09 11:38:19.9946 Debug Trace => blackhole
+2018-02-09 11:38:20.0079 Debug Debug => blackhole
+2018-02-09 11:38:20.0079 Debug Info => blackhole
+2018-02-09 11:38:20.0079 Debug Warn => blackhole
+2018-02-09 11:38:20.0079 Debug Error => blackhole
+2018-02-09 11:38:20.0256 Debug Fatal => blackhole
+2018-02-09 11:38:20.0256 Debug Targets for Microsoft.AspNetCore.DataProtection.Internal.DataProtectionStartupFilter by level:
+2018-02-09 11:38:20.0256 Debug Trace => blackhole
+2018-02-09 11:38:20.0256 Debug Debug => blackhole
+2018-02-09 11:38:20.0430 Debug Info => blackhole
+2018-02-09 11:38:20.0430 Debug Warn => blackhole
+2018-02-09 11:38:20.0430 Debug Error => blackhole
+2018-02-09 11:38:20.0430 Debug Fatal => blackhole
+2018-02-09 11:38:20.0606 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor by level:
+2018-02-09 11:38:20.0606 Debug Trace => blackhole
+2018-02-09 11:38:20.0606 Debug Debug => blackhole
+2018-02-09 11:38:20.0606 Debug Info => blackhole
+2018-02-09 11:38:20.0779 Debug Warn => blackhole
+2018-02-09 11:38:20.0779 Debug Error => blackhole
+2018-02-09 11:38:20.0779 Debug Fatal => blackhole
+2018-02-09 11:38:20.0779 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonPatchInputFormatter by level:
+2018-02-09 11:38:20.0959 Debug Trace => blackhole
+2018-02-09 11:38:20.0959 Debug Debug => blackhole
+2018-02-09 11:38:20.0959 Debug Info => blackhole
+2018-02-09 11:38:20.0959 Debug Warn => blackhole
+2018-02-09 11:38:20.1137 Debug Error => blackhole
+2018-02-09 11:38:20.1137 Debug Fatal => blackhole
+2018-02-09 11:38:20.1137 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter by level:
+2018-02-09 11:38:20.1137 Debug Trace => blackhole
+2018-02-09 11:38:20.1343 Debug Debug => blackhole
+2018-02-09 11:38:20.1343 Debug Info => blackhole
+2018-02-09 11:38:20.1343 Debug Warn => blackhole
+2018-02-09 11:38:20.1343 Debug Error => blackhole
+2018-02-09 11:38:20.1343 Debug Fatal => blackhole
+2018-02-09 11:38:20.1343 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.RazorProjectPageRouteModelProvider by level:
+2018-02-09 11:38:20.1343 Debug Trace => blackhole
+2018-02-09 11:38:20.1646 Debug Debug => blackhole
+2018-02-09 11:38:20.1646 Debug Info => blackhole
+2018-02-09 11:38:20.1646 Debug Warn => blackhole
+2018-02-09 11:38:20.1646 Debug Error => blackhole
+2018-02-09 11:38:20.1821 Debug Fatal => blackhole
+2018-02-09 11:38:20.1821 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker by level:
+2018-02-09 11:38:20.1821 Debug Trace => blackhole
+2018-02-09 11:38:20.1821 Debug Debug => blackhole
+2018-02-09 11:38:20.1997 Debug Info => blackhole
+2018-02-09 11:38:20.1997 Debug Warn => blackhole
+2018-02-09 11:38:20.1997 Debug Error => blackhole
+2018-02-09 11:38:20.1997 Debug Fatal => blackhole
+2018-02-09 11:38:20.2174 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler by level:
+2018-02-09 11:38:20.2174 Debug Trace => blackhole
+2018-02-09 11:38:20.2174 Debug Debug => blackhole
+2018-02-09 11:38:20.2174 Debug Info => blackhole
+2018-02-09 11:38:20.2347 Debug Warn => blackhole
+2018-02-09 11:38:20.2347 Debug Error => blackhole
+2018-02-09 11:38:20.2347 Debug Fatal => blackhole
+2018-02-09 11:38:20.2347 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector by level:
+2018-02-09 11:38:20.2522 Debug Trace => blackhole
+2018-02-09 11:38:20.2522 Debug Debug => blackhole
+2018-02-09 11:38:20.2522 Debug Info => blackhole
+2018-02-09 11:38:20.2522 Debug Warn => blackhole
+2018-02-09 11:38:20.2713 Debug Error => blackhole
+2018-02-09 11:38:20.2713 Debug Fatal => blackhole
+2018-02-09 11:38:20.2713 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider by level:
+2018-02-09 11:38:20.2869 Debug Trace => blackhole
+2018-02-09 11:38:20.2869 Debug Debug => blackhole
+2018-02-09 11:38:20.2869 Debug Info => blackhole
+2018-02-09 11:38:20.2869 Debug Warn => blackhole
+2018-02-09 11:38:20.3046 Debug Error => blackhole
+2018-02-09 11:38:20.3046 Debug Fatal => blackhole
+2018-02-09 11:38:20.3046 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker by level:
+2018-02-09 11:38:20.3046 Debug Trace => blackhole
+2018-02-09 11:38:20.3220 Debug Debug => blackhole
+2018-02-09 11:38:20.3220 Debug Info => blackhole
+2018-02-09 11:38:20.3220 Debug Warn => blackhole
+2018-02-09 11:38:20.3220 Debug Error => blackhole
+2018-02-09 11:38:20.3398 Debug Fatal => blackhole
+2018-02-09 11:38:20.3398 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ActionSelector by level:
+2018-02-09 11:38:20.3398 Debug Trace => blackhole
+2018-02-09 11:38:20.3398 Debug Debug => blackhole
+2018-02-09 11:38:20.3570 Debug Info => blackhole
+2018-02-09 11:38:20.3570 Debug Warn => blackhole
+2018-02-09 11:38:20.3570 Debug Error => blackhole
+2018-02-09 11:38:20.3570 Debug Fatal => blackhole
+2018-02-09 11:38:20.3746 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.MvcRouteHandler by level:
+2018-02-09 11:38:20.3746 Debug Trace => blackhole
+2018-02-09 11:38:20.3746 Debug Debug => blackhole
+2018-02-09 11:38:20.3746 Debug Info => blackhole
+2018-02-09 11:38:20.3746 Debug Warn => blackhole
+2018-02-09 11:38:20.3963 Debug Error => blackhole
+2018-02-09 11:38:20.3963 Debug Fatal => blackhole
+2018-02-09 11:38:20.4390 Debug Targets for Microsoft.AspNetCore.Builder.RouterMiddleware by level:
+2018-02-09 11:38:20.4439 Debug Trace => blackhole
+2018-02-09 11:38:20.4439 Debug Debug => blackhole
+2018-02-09 11:38:20.4439 Debug Info => blackhole
+2018-02-09 11:38:20.4439 Debug Warn => blackhole
+2018-02-09 11:38:20.4611 Debug Error => blackhole
+2018-02-09 11:38:20.4611 Debug Fatal => blackhole
+2018-02-09 11:38:20.4611 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
+2018-02-09 11:38:20.4611 Debug Trace => blackhole
+2018-02-09 11:38:20.4810 Debug Debug => blackhole
+2018-02-09 11:38:20.4810 Debug Info => blackhole
+2018-02-09 11:38:20.4810 Debug Warn => blackhole
+2018-02-09 11:38:20.4948 Debug Error => blackhole
+2018-02-09 11:38:20.4948 Debug Fatal => blackhole
+2018-02-09 11:38:20.4948 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.WebHost by level:
+2018-02-09 11:38:20.5125 Debug Trace => blackhole
+2018-02-09 11:38:20.5125 Debug Debug => blackhole
+2018-02-09 11:38:20.5125 Debug Info => blackhole
+2018-02-09 11:38:20.5270 Debug Warn => blackhole
+2018-02-09 11:38:20.5270 Debug Error => blackhole
+2018-02-09 11:38:20.5270 Debug Fatal => blackhole
+2018-02-09 11:38:20.5473 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor by level:
+2018-02-09 11:38:20.5473 Debug Trace => blackhole
+2018-02-09 11:38:20.5566 Debug Debug => blackhole
+2018-02-09 11:38:20.5566 Debug Info => blackhole
+2018-02-09 11:38:20.5566 Debug Warn => blackhole
+2018-02-09 11:38:20.5706 Debug Error => blackhole
+2018-02-09 11:38:20.5706 Debug Fatal => blackhole
+2018-02-09 11:38:21.2004 Debug Targets for Microsoft.AspNetCore.Routing.Tree.TreeRouter by level:
+2018-02-09 11:38:21.2065 Debug Trace => blackhole
+2018-02-09 11:38:21.2065 Debug Debug => blackhole
+2018-02-09 11:38:21.2065 Debug Info => blackhole
+2018-02-09 11:38:21.2210 Debug Warn => blackhole
+2018-02-09 11:38:21.2210 Debug Error => blackhole
+2018-02-09 11:38:21.2456 Debug Fatal => blackhole
+2018-02-09 11:38:21.2456 Debug Targets for Microsoft.AspNetCore.Routing.RouteConstraintMatcher by level:
+2018-02-09 11:38:21.2577 Debug Trace => blackhole
+2018-02-09 11:38:21.2577 Debug Debug => blackhole
+2018-02-09 11:38:21.2577 Debug Info => blackhole
+2018-02-09 11:38:21.2577 Debug Warn => blackhole
+2018-02-09 11:38:21.2577 Debug Error => blackhole
+2018-02-09 11:38:21.2875 Debug Fatal => blackhole
+2018-02-09 11:38:21.2875 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler by level:
+2018-02-09 11:38:21.3016 Debug Trace => blackhole
+2018-02-09 11:38:21.3065 Debug Debug => blackhole
+2018-02-09 11:38:21.3228 Debug Info => blackhole
+2018-02-09 11:38:21.3336 Debug Warn => blackhole
+2018-02-09 11:38:21.3336 Debug Error => blackhole
+2018-02-09 11:38:21.3336 Debug Fatal => blackhole
+2018-02-09 11:38:21.4039 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor by level:
+2018-02-09 11:38:21.4039 Debug Trace => blackhole
+2018-02-09 11:38:21.4140 Debug Debug => blackhole
+2018-02-09 11:38:21.4140 Debug Info => blackhole
+2018-02-09 11:38:21.4140 Debug Warn => blackhole
+2018-02-09 11:38:21.4280 Debug Error => blackhole
+2018-02-09 11:38:21.4280 Debug Fatal => blackhole
+2018-02-09 11:42:08.4621 Info Loading assembly: NLog.Web.AspNetCore
+2018-02-09 11:42:08.4831 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2018-02-09 11:42:08.5725 Debug Start auto loading, location: c:\.nuget\packages\nlog\5.0.0-beta07\lib\netstandard1.5
+2018-02-09 11:42:08.5799 Debug Auto loading done
+2018-02-09 11:42:08.5799 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2018-02-09 11:42:08.6099 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.6174 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:42:08.6260 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-02-09 11:42:08.6260 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-02-09 11:42:08.6260 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.6435 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:08.6435 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.6577 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:42:08.6667 Trace  Scanning Property Culture '' System.Globalization
+2018-02-09 11:42:08.6667 Trace  Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:42:08.6667 Trace  Scanning SimpleLayout ''''
+2018-02-09 11:42:08.6827 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:08.6827 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:08.6933 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.6933 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:42:08.6933 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.6933 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:42:08.7244 Debug Setting 'FileTarget.name' to 'historico'
+2018-02-09 11:42:08.7244 Debug Setting 'FileTarget.fileName' to '${basedir}\logs\RestTestWebApp\${shortdate}.log'
+2018-02-09 11:42:08.7244 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.7385 Trace Scanning BaseDirLayoutRenderer 'Layout Renderer: ${basedir}'
+2018-02-09 11:42:08.7552 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.7552 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:42:08.7552 Debug Setting 'FileTarget.encoding' to 'utf-8'
+2018-02-09 11:42:08.7692 Debug Setting 'FileTarget.layout' to '[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'
+2018-02-09 11:42:08.7692 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.7692 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:42:08.7692 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.7871 Trace Scanning MachineNameLayoutRenderer 'Layout Renderer: ${machinename}'
+2018-02-09 11:42:08.7871 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.7871 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:08.8010 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.8010 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:42:08.8190 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.8190 Trace Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:42:08.8190 Trace  Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:42:08.8190 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.8370 Trace Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:42:08.8370 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.8370 Trace Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:08.8534 Debug Setting 'AspNetRequestValueLayoutRenderer.Item' to 'queryString'
+2018-02-09 11:42:08.8534 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.8659 Trace Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:08.8817 Debug Setting 'AspNetRequestValueLayoutRenderer.header' to 'Content-Type'
+2018-02-09 11:42:08.8817 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.8817 Trace Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:08.8965 Info Adding target File Target[historico]
+2018-02-09 11:42:08.8965 Debug Registering target historico: NLog.Targets.FileTarget
+2018-02-09 11:42:08.8965 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.8965 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:42:08.9197 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-02-09 11:42:08.9197 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-02-09 11:42:08.9330 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.9330 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:08.9330 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.9330 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:42:08.9532 Trace  Scanning Property Culture '' System.Globalization
+2018-02-09 11:42:08.9688 Trace  Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:42:08.9688 Trace  Scanning SimpleLayout ''''
+2018-02-09 11:42:08.9688 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:08.9688 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:08.9898 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:08.9898 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:42:08.9898 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-02-09 11:42:09.0040 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:42:09.0040 Debug Setting 'NullTarget.name' to 'blackhole'
+2018-02-09 11:42:09.0040 Info Adding target Null Target[blackhole]
+2018-02-09 11:42:09.0189 Debug Registering target blackhole: NLog.Targets.NullTarget
+2018-02-09 11:42:09.0189 Trace ParseRulesElement
+2018-02-09 11:42:09.0189 Info Configured from an XML element in C:\app\nlog.config...
+2018-02-09 11:42:09.0409 Debug Unused target checking is started... Rule Count: 2, Target Count: 2
+2018-02-09 11:42:09.0409 Debug Unused target checking is completed. Total Rule Count: 2, Total Target Count: 2, Unused Target Count: 0
+2018-02-09 11:42:09.0548 Debug --- NLog configuration dump ---
+2018-02-09 11:42:09.0548 Debug Targets:
+2018-02-09 11:42:09.0646 Debug File Target[historico]
+2018-02-09 11:42:09.0646 Debug Null Target[blackhole]
+2018-02-09 11:42:09.0646 Debug Rules:
+2018-02-09 11:42:09.0819 Debug logNamePattern: (Microsoft.:StartsWith) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ blackhole ]
+2018-02-09 11:42:09.0819 Debug logNamePattern: (:All) levels: [ Warn Error Fatal ] appendTo: [ historico ]
+2018-02-09 11:42:09.0819 Debug --- End of NLog configuration dump ---
+2018-02-09 11:42:09.0987 Trace FindReachableObject<System.Object>:
+2018-02-09 11:42:09.0987 Trace Scanning LoggingRule 'logNamePattern: (Microsoft.:StartsWith) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ blackhole ]'
+2018-02-09 11:42:09.0987 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:42:09.1129 Trace  Scanning NullTarget 'Null Target[blackhole]'
+2018-02-09 11:42:09.1129 Trace   Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2018-02-09 11:42:09.1129 Trace   Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:42:09.1280 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.1280 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:42:09.1280 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.1280 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:42:09.1480 Trace     Scanning Property Culture '' System.Globalization
+2018-02-09 11:42:09.1480 Trace     Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:42:09.1480 Trace     Scanning SimpleLayout ''''
+2018-02-09 11:42:09.1643 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.1643 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:09.1643 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.1643 Trace    Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:42:09.1829 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.1829 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:42:09.1829 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:42:09.1959 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:42:09.1959 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:42:09.1959 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Warn Error Fatal ] appendTo: [ historico ]'
+2018-02-09 11:42:09.1959 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:42:09.2142 Trace  Scanning FileTarget 'File Target[historico]'
+2018-02-09 11:42:09.2142 Trace   Scanning Property FileName ''${basedir}\logs\RestTestWebApp\${shortdate}.log'' NLog.Layouts
+2018-02-09 11:42:09.2142 Trace   Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:42:09.2142 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.2318 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.2318 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:42:09.2318 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.2318 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2018-02-09 11:42:09.2492 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-02-09 11:42:09.2492 Trace   Scanning Property Layout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'' NLog.Layouts
+2018-02-09 11:42:09.2492 Trace   Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:42:09.2492 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.2667 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.2667 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:42:09.2667 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.2667 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:09.2848 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.2848 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:42:09.2848 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.2848 Trace    Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:42:09.3026 Trace     Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:42:09.3026 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.3026 Trace    Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:42:09.3026 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.3200 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:09.3200 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:09.3200 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.3338 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:09.3338 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:42:09.3338 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:42:09.3338 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:42:09.3523 Info Found 34 configuration items
+2018-02-09 11:42:09.3523 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:42:09.3523 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:42:09.3688 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.3688 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:42:09.3688 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:42:09.3688 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:42:09.3688 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:42:09.3956 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.3956 Trace Initializing Layout Renderer: ${aspnet-request-url}
+2018-02-09 11:42:09.3956 Warn Missing IHttpContextAccessor. Has it been registered before loading NLog Configuration? Consider reloading NLog Configuration after having registered the IHttpContextAccessor.
+2018-02-09 11:42:09.4104 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.4104 Trace Initializing Layout Renderer: ${exception}
+2018-02-09 11:42:09.4104 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.4104 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:42:09.4293 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.4293 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:42:09.4293 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.4453 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:42:09.4453 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.4453 Trace Initializing '[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'
+2018-02-09 11:42:09.4453 Trace FindReachableObject<System.Object>:
+2018-02-09 11:42:09.4637 Trace Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:42:09.4637 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.4637 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.4637 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:42:09.4818 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.4818 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:09.4818 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.4818 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:42:09.5019 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.5019 Trace  Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:42:09.5019 Trace   Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:42:09.5151 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.5151 Trace  Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:42:09.5151 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.5151 Trace  Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:09.5326 Trace  Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:09.5326 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.5326 Trace  Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:09.5326 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.5499 Trace Initializing Layout Renderer: ${shortdate}
+2018-02-09 11:42:09.5499 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.5499 Trace Initializing '${basedir}\logs\RestTestWebApp\${shortdate}.log'
+2018-02-09 11:42:09.5499 Trace FindReachableObject<System.Object>:
+2018-02-09 11:42:09.5673 Trace Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:42:09.5673 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.5673 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.5673 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:42:09.5847 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.5847 Trace Initializing File Target[historico]
+2018-02-09 11:42:09.5847 Trace FindReachableObject<NLog.Layouts.Layout>:
+2018-02-09 11:42:09.6028 Trace Scanning FileTarget 'File Target[historico]'
+2018-02-09 11:42:09.6028 Trace  Scanning Property FileName ''${basedir}\logs\RestTestWebApp\${shortdate}.log'' NLog.Layouts
+2018-02-09 11:42:09.6180 Trace  Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:42:09.6180 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.6180 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.6406 Trace   Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:42:09.6406 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.6406 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-02-09 11:42:09.6571 Trace  Scanning Property Layout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'' NLog.Layouts
+2018-02-09 11:42:09.6624 Trace  Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:42:09.6624 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.6624 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.6785 Trace   Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:42:09.6785 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.6785 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:09.6937 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.6937 Trace   Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:42:09.6937 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.6937 Trace   Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:42:09.7133 Trace    Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:42:09.7133 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.7133 Trace   Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:42:09.7287 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.7287 Trace   Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:09.7287 Trace   Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:09.7287 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.7463 Trace   Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:09.7463 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2018-02-09 11:42:09.7463 Trace File Target[historico] has 2 layouts
+2018-02-09 11:42:09.7688 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:42:09.7688 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.7775 Trace Initializing Layout Renderer: ${logger}
+2018-02-09 11:42:09.7775 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.7775 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:42:09.7775 Trace Initializing ''
+2018-02-09 11:42:09.7960 Trace FindReachableObject<System.Object>:
+2018-02-09 11:42:09.7960 Trace Scanning SimpleLayout ''''
+2018-02-09 11:42:09.7960 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.7960 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:09.7960 Trace Initializing Layout Renderer: ${uppercase}
+2018-02-09 11:42:09.8170 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:09.8170 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:42:09.8170 Trace Initializing '${longdate}|${level:uppercase=true}|${logger}|${message}'
+2018-02-09 11:42:09.8170 Trace FindReachableObject<System.Object>:
+2018-02-09 11:42:09.8334 Trace Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:42:09.8376 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.8376 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:42:09.8376 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.8498 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:42:09.8498 Trace   Scanning Property Culture '' System.Globalization
+2018-02-09 11:42:09.8498 Trace   Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:42:09.8498 Trace   Scanning SimpleLayout ''''
+2018-02-09 11:42:09.8688 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.8688 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:09.8688 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.8843 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:42:09.8843 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.8969 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:42:09.8969 Trace Initializing Null Target[blackhole]
+2018-02-09 11:42:09.8969 Trace FindReachableObject<NLog.Layouts.Layout>:
+2018-02-09 11:42:09.9151 Trace Scanning NullTarget 'Null Target[blackhole]'
+2018-02-09 11:42:09.9151 Trace  Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2018-02-09 11:42:09.9151 Trace  Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:42:09.9280 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.9280 Trace   Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:42:09.9280 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.9446 Trace   Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:42:09.9446 Trace    Scanning Property Culture '' System.Globalization
+2018-02-09 11:42:09.9446 Trace    Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:42:09.9620 Trace    Scanning SimpleLayout ''''
+2018-02-09 11:42:09.9620 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:09.9620 Trace     Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:09.9786 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.9786 Trace   Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:42:09.9786 Trace   Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:09.9945 Trace   Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:42:09.9945 Trace Null Target[blackhole] has 2 layouts
+2018-02-09 11:42:09.9945 Trace FindReachableObject<System.Object>:
+2018-02-09 11:42:10.0073 Trace Scanning LoggingRule 'logNamePattern: (Microsoft.:StartsWith) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ blackhole ]'
+2018-02-09 11:42:10.0073 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:42:10.0073 Trace  Scanning NullTarget 'Null Target[blackhole]'
+2018-02-09 11:42:10.0073 Trace   Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2018-02-09 11:42:10.0263 Trace   Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2018-02-09 11:42:10.0263 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:10.0263 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:42:10.0394 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.0394 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-02-09 11:42:10.0394 Trace     Scanning Property Culture '' System.Globalization
+2018-02-09 11:42:10.0394 Trace     Scanning Property Inner '''' NLog.Layouts
+2018-02-09 11:42:10.0588 Trace     Scanning SimpleLayout ''''
+2018-02-09 11:42:10.0588 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:10.0588 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:10.0588 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.0769 Trace    Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-02-09 11:42:10.0769 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.0769 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:42:10.0920 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:42:10.0920 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:42:10.0920 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:42:10.0920 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Warn Error Fatal ] appendTo: [ historico ]'
+2018-02-09 11:42:10.1105 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-02-09 11:42:10.1105 Trace  Scanning FileTarget 'File Target[historico]'
+2018-02-09 11:42:10.1105 Trace   Scanning Property FileName ''${basedir}\logs\RestTestWebApp\${shortdate}.log'' NLog.Layouts
+2018-02-09 11:42:10.1244 Trace   Scanning SimpleLayout ''${basedir}\logs\RestTestWebApp\${shortdate}.log''
+2018-02-09 11:42:10.1244 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:10.1244 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.1244 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-02-09 11:42:10.1428 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.1428 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-02-09 11:42:10.1428 Trace   Scanning Property Layout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'' NLog.Layouts
+2018-02-09 11:42:10.1580 Trace   Scanning SimpleLayout ''[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}''
+2018-02-09 11:42:10.1580 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-02-09 11:42:10.1580 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.1580 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-02-09 11:42:10.1766 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.1766 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-02-09 11:42:10.1766 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.1902 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-02-09 11:42:10.1902 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.1902 Trace    Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2018-02-09 11:42:10.1902 Trace     Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2018-02-09 11:42:10.2081 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.2081 Trace    Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2018-02-09 11:42:10.2081 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.2210 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:10.2210 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:10.2210 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-02-09 11:42:10.2210 Trace    Scanning AspNetRequestValueLayoutRenderer 'Layout Renderer: ${aspnet-request}'
+2018-02-09 11:42:10.2395 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2018-02-09 11:42:10.2395 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-02-09 11:42:10.2395 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-02-09 11:42:10.2395 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-02-09 11:42:10.2579 Info Found 34 configuration items
+2018-02-09 11:42:10.2579 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:42:10.2579 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.2720 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:42:10.2720 Trace Initializing Layout Renderer: ${aspnet-request}
+2018-02-09 11:42:10.2720 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.2861 Trace Initializing Layout Renderer: ${aspnet-request-url}
+2018-02-09 11:42:10.2904 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.2904 Trace Initializing Layout Renderer: ${exception}
+2018-02-09 11:42:10.2904 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.3045 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:42:10.3045 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.3045 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:42:10.3213 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.3213 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:42:10.3213 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.3213 Trace Initializing '[${longdate}][${machinename}][${level}] ${message} ${exception}, url: ${aspnet-request-url} ${aspnet-request:serverVariable=HTTP_URL}${aspnet-request:queryString}, content-type: ${aspnet-request:header=Content-Type}'
+2018-02-09 11:42:10.3395 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.3395 Trace Initializing Layout Renderer: ${shortdate}
+2018-02-09 11:42:10.3395 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.3538 Trace Initializing '${basedir}\logs\RestTestWebApp\${shortdate}.log'
+2018-02-09 11:42:10.3538 Trace Initializing File Target[historico]
+2018-02-09 11:42:10.3538 Trace Initializing Layout Renderer: ${message}
+2018-02-09 11:42:10.3538 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.3722 Trace Initializing Layout Renderer: ${logger}
+2018-02-09 11:42:10.3722 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.3722 Trace Initializing Layout Renderer: ${level}
+2018-02-09 11:42:10.3864 Trace Initializing ''
+2018-02-09 11:42:10.3864 Trace Initializing Layout Renderer: ${uppercase}
+2018-02-09 11:42:10.3864 Trace Initializing Layout Renderer: ${literal}
+2018-02-09 11:42:10.3864 Trace Initializing Layout Renderer: ${longdate}
+2018-02-09 11:42:10.3864 Trace Initializing '${longdate}|${level:uppercase=true}|${logger}|${message}'
+2018-02-09 11:42:10.4087 Trace Initializing Null Target[blackhole]
+2018-02-09 11:42:10.4242 Debug Watching path 'C:\app' filter 'nlog.config' for changes.
+2018-02-09 11:42:10.5351 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.ApplicationLifetime by level:
+2018-02-09 11:42:10.5351 Debug Trace => blackhole
+2018-02-09 11:42:10.5446 Debug Debug => blackhole
+2018-02-09 11:42:10.5446 Debug Info => blackhole
+2018-02-09 11:42:10.5446 Debug Warn => blackhole
+2018-02-09 11:42:10.5595 Debug Error => blackhole
+2018-02-09 11:42:10.5595 Debug Fatal => blackhole
+2018-02-09 11:42:10.5595 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv by level:
+2018-02-09 11:42:10.5595 Debug Trace => blackhole
+2018-02-09 11:42:10.5595 Debug Debug => blackhole
+2018-02-09 11:42:10.5846 Debug Info => blackhole
+2018-02-09 11:42:10.5846 Debug Warn => blackhole
+2018-02-09 11:42:10.5846 Debug Error => blackhole
+2018-02-09 11:42:10.5989 Debug Fatal => blackhole
+2018-02-09 11:42:10.6031 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2018-02-09 11:42:10.6031 Debug Trace => blackhole
+2018-02-09 11:42:10.6031 Debug Debug => blackhole
+2018-02-09 11:42:10.6161 Debug Info => blackhole
+2018-02-09 11:42:10.6161 Debug Warn => blackhole
+2018-02-09 11:42:10.6161 Debug Error => blackhole
+2018-02-09 11:42:10.6161 Debug Fatal => blackhole
+2018-02-09 11:42:10.6349 Debug Targets for Microsoft.AspNetCore.DataProtection.TypeForwardingActivator by level:
+2018-02-09 11:42:10.6349 Debug Trace => blackhole
+2018-02-09 11:42:10.6349 Debug Debug => blackhole
+2018-02-09 11:42:10.6502 Debug Info => blackhole
+2018-02-09 11:42:10.6502 Debug Warn => blackhole
+2018-02-09 11:42:10.6502 Debug Error => blackhole
+2018-02-09 11:42:10.6650 Debug Fatal => blackhole
+2018-02-09 11:42:10.6650 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager by level:
+2018-02-09 11:42:10.6650 Debug Trace => blackhole
+2018-02-09 11:42:10.6650 Debug Debug => blackhole
+2018-02-09 11:42:10.6650 Debug Info => blackhole
+2018-02-09 11:42:10.6892 Debug Warn => blackhole
+2018-02-09 11:42:10.6892 Debug Error => blackhole
+2018-02-09 11:42:10.6892 Debug Fatal => blackhole
+2018-02-09 11:42:10.7084 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory by level:
+2018-02-09 11:42:10.7217 Debug Trace => blackhole
+2018-02-09 11:42:10.7361 Debug Debug => blackhole
+2018-02-09 11:42:10.7408 Debug Info => blackhole
+2018-02-09 11:42:10.7408 Debug Warn => blackhole
+2018-02-09 11:42:10.7408 Debug Error => blackhole
+2018-02-09 11:42:10.7604 Debug Fatal => blackhole
+2018-02-09 11:42:10.7604 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory by level:
+2018-02-09 11:42:10.7604 Debug Trace => blackhole
+2018-02-09 11:42:10.7754 Debug Debug => blackhole
+2018-02-09 11:42:10.7754 Debug Info => blackhole
+2018-02-09 11:42:10.7754 Debug Warn => blackhole
+2018-02-09 11:42:10.7754 Debug Error => blackhole
+2018-02-09 11:42:10.7935 Debug Fatal => blackhole
+2018-02-09 11:42:10.7935 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory by level:
+2018-02-09 11:42:10.7935 Debug Trace => blackhole
+2018-02-09 11:42:10.7935 Debug Debug => blackhole
+2018-02-09 11:42:10.8113 Debug Info => blackhole
+2018-02-09 11:42:10.8113 Debug Warn => blackhole
+2018-02-09 11:42:10.8113 Debug Error => blackhole
+2018-02-09 11:42:10.8113 Debug Fatal => blackhole
+2018-02-09 11:42:10.8286 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor by level:
+2018-02-09 11:42:10.8286 Debug Trace => blackhole
+2018-02-09 11:42:10.8286 Debug Debug => blackhole
+2018-02-09 11:42:10.8286 Debug Info => blackhole
+2018-02-09 11:42:10.8458 Debug Warn => blackhole
+2018-02-09 11:42:10.8458 Debug Error => blackhole
+2018-02-09 11:42:10.8458 Debug Fatal => blackhole
+2018-02-09 11:42:10.8458 Debug Targets for Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository by level:
+2018-02-09 11:42:10.8631 Debug Trace => blackhole
+2018-02-09 11:42:10.8631 Debug Debug => blackhole
+2018-02-09 11:42:10.8631 Debug Info => blackhole
+2018-02-09 11:42:10.8631 Debug Warn => blackhole
+2018-02-09 11:42:10.8808 Debug Error => blackhole
+2018-02-09 11:42:10.8808 Debug Fatal => blackhole
+2018-02-09 11:42:10.8808 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver by level:
+2018-02-09 11:42:10.8808 Debug Trace => blackhole
+2018-02-09 11:42:10.8984 Debug Debug => blackhole
+2018-02-09 11:42:10.8984 Debug Info => blackhole
+2018-02-09 11:42:10.8984 Debug Warn => blackhole
+2018-02-09 11:42:10.9121 Debug Error => blackhole
+2018-02-09 11:42:10.9121 Debug Fatal => blackhole
+2018-02-09 11:42:10.9121 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider by level:
+2018-02-09 11:42:10.9121 Debug Trace => blackhole
+2018-02-09 11:42:10.9290 Debug Debug => blackhole
+2018-02-09 11:42:10.9290 Debug Info => blackhole
+2018-02-09 11:42:10.9290 Debug Warn => blackhole
+2018-02-09 11:42:10.9290 Debug Error => blackhole
+2018-02-09 11:42:10.9466 Debug Fatal => blackhole
+2018-02-09 11:42:10.9466 Debug Targets for Microsoft.AspNetCore.DataProtection.Internal.DataProtectionStartupFilter by level:
+2018-02-09 11:42:10.9466 Debug Trace => blackhole
+2018-02-09 11:42:10.9466 Debug Debug => blackhole
+2018-02-09 11:42:10.9641 Debug Info => blackhole
+2018-02-09 11:42:10.9641 Debug Warn => blackhole
+2018-02-09 11:42:10.9641 Debug Error => blackhole
+2018-02-09 11:42:10.9641 Debug Fatal => blackhole
+2018-02-09 11:42:10.9815 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor by level:
+2018-02-09 11:42:10.9815 Debug Trace => blackhole
+2018-02-09 11:42:10.9815 Debug Debug => blackhole
+2018-02-09 11:42:10.9815 Debug Info => blackhole
+2018-02-09 11:42:10.9987 Debug Warn => blackhole
+2018-02-09 11:42:10.9987 Debug Error => blackhole
+2018-02-09 11:42:10.9987 Debug Fatal => blackhole
+2018-02-09 11:42:10.9987 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonPatchInputFormatter by level:
+2018-02-09 11:42:11.0161 Debug Trace => blackhole
+2018-02-09 11:42:11.0161 Debug Debug => blackhole
+2018-02-09 11:42:11.0161 Debug Info => blackhole
+2018-02-09 11:42:11.0161 Debug Warn => blackhole
+2018-02-09 11:42:11.0330 Debug Error => blackhole
+2018-02-09 11:42:11.0330 Debug Fatal => blackhole
+2018-02-09 11:42:11.0330 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter by level:
+2018-02-09 11:42:11.0330 Debug Trace => blackhole
+2018-02-09 11:42:11.0508 Debug Debug => blackhole
+2018-02-09 11:42:11.0508 Debug Info => blackhole
+2018-02-09 11:42:11.0508 Debug Warn => blackhole
+2018-02-09 11:42:11.0508 Debug Error => blackhole
+2018-02-09 11:42:11.0680 Debug Fatal => blackhole
+2018-02-09 11:42:11.0680 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.RazorProjectPageRouteModelProvider by level:
+2018-02-09 11:42:11.0680 Debug Trace => blackhole
+2018-02-09 11:42:11.0680 Debug Debug => blackhole
+2018-02-09 11:42:11.0864 Debug Info => blackhole
+2018-02-09 11:42:11.0864 Debug Warn => blackhole
+2018-02-09 11:42:11.0864 Debug Error => blackhole
+2018-02-09 11:42:11.0864 Debug Fatal => blackhole
+2018-02-09 11:42:11.1032 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker by level:
+2018-02-09 11:42:11.1032 Debug Trace => blackhole
+2018-02-09 11:42:11.1032 Debug Debug => blackhole
+2018-02-09 11:42:11.1032 Debug Info => blackhole
+2018-02-09 11:42:11.1198 Debug Warn => blackhole
+2018-02-09 11:42:11.1198 Debug Error => blackhole
+2018-02-09 11:42:11.1198 Debug Fatal => blackhole
+2018-02-09 11:42:11.1198 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler by level:
+2018-02-09 11:42:11.1198 Debug Trace => blackhole
+2018-02-09 11:42:11.1441 Debug Debug => blackhole
+2018-02-09 11:42:11.1441 Debug Info => blackhole
+2018-02-09 11:42:11.1441 Debug Warn => blackhole
+2018-02-09 11:42:11.1580 Debug Error => blackhole
+2018-02-09 11:42:11.1580 Debug Fatal => blackhole
+2018-02-09 11:42:11.1580 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector by level:
+2018-02-09 11:42:11.1580 Debug Trace => blackhole
+2018-02-09 11:42:11.1763 Debug Debug => blackhole
+2018-02-09 11:42:11.1763 Debug Info => blackhole
+2018-02-09 11:42:11.1763 Debug Warn => blackhole
+2018-02-09 11:42:11.1895 Debug Error => blackhole
+2018-02-09 11:42:11.1895 Debug Fatal => blackhole
+2018-02-09 11:42:11.1895 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider by level:
+2018-02-09 11:42:11.1895 Debug Trace => blackhole
+2018-02-09 11:42:11.2106 Debug Debug => blackhole
+2018-02-09 11:42:11.2106 Debug Info => blackhole
+2018-02-09 11:42:11.2106 Debug Warn => blackhole
+2018-02-09 11:42:11.2257 Debug Error => blackhole
+2018-02-09 11:42:11.2257 Debug Fatal => blackhole
+2018-02-09 11:42:11.2257 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker by level:
+2018-02-09 11:42:11.2257 Debug Trace => blackhole
+2018-02-09 11:42:11.2443 Debug Debug => blackhole
+2018-02-09 11:42:11.2443 Debug Info => blackhole
+2018-02-09 11:42:11.2443 Debug Warn => blackhole
+2018-02-09 11:42:11.2585 Debug Error => blackhole
+2018-02-09 11:42:11.2585 Debug Fatal => blackhole
+2018-02-09 11:42:11.2585 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ActionSelector by level:
+2018-02-09 11:42:11.2726 Debug Trace => blackhole
+2018-02-09 11:42:11.2726 Debug Debug => blackhole
+2018-02-09 11:42:11.2726 Debug Info => blackhole
+2018-02-09 11:42:11.2726 Debug Warn => blackhole
+2018-02-09 11:42:11.2916 Debug Error => blackhole
+2018-02-09 11:42:11.2916 Debug Fatal => blackhole
+2018-02-09 11:42:11.2916 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.MvcRouteHandler by level:
+2018-02-09 11:42:11.2916 Debug Trace => blackhole
+2018-02-09 11:42:11.3115 Debug Debug => blackhole
+2018-02-09 11:42:11.3115 Debug Info => blackhole
+2018-02-09 11:42:11.3115 Debug Warn => blackhole
+2018-02-09 11:42:11.3255 Debug Error => blackhole
+2018-02-09 11:42:11.3255 Debug Fatal => blackhole
+2018-02-09 11:42:11.3701 Debug Targets for Microsoft.AspNetCore.Builder.RouterMiddleware by level:
+2018-02-09 11:42:11.3701 Debug Trace => blackhole
+2018-02-09 11:42:11.3791 Debug Debug => blackhole
+2018-02-09 11:42:11.3791 Debug Info => blackhole
+2018-02-09 11:42:11.3791 Debug Warn => blackhole
+2018-02-09 11:42:11.3791 Debug Error => blackhole
+2018-02-09 11:42:11.3972 Debug Fatal => blackhole
+2018-02-09 11:42:11.3972 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
+2018-02-09 11:42:11.3972 Debug Trace => blackhole
+2018-02-09 11:42:11.4129 Debug Debug => blackhole
+2018-02-09 11:42:11.4129 Debug Info => blackhole
+2018-02-09 11:42:11.4129 Debug Warn => blackhole
+2018-02-09 11:42:11.4260 Debug Error => blackhole
+2018-02-09 11:42:11.4260 Debug Fatal => blackhole
+2018-02-09 11:42:11.4260 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.WebHost by level:
+2018-02-09 11:42:11.4260 Debug Trace => blackhole
+2018-02-09 11:42:11.4456 Debug Debug => blackhole
+2018-02-09 11:42:11.4456 Debug Info => blackhole
+2018-02-09 11:42:11.4456 Debug Warn => blackhole
+2018-02-09 11:42:11.4586 Debug Error => blackhole
+2018-02-09 11:42:11.4586 Debug Fatal => blackhole
+2018-02-09 11:42:11.4586 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor by level:
+2018-02-09 11:42:11.4771 Debug Trace => blackhole
+2018-02-09 11:42:11.4771 Debug Debug => blackhole
+2018-02-09 11:42:11.4771 Debug Info => blackhole
+2018-02-09 11:42:11.4771 Debug Warn => blackhole
+2018-02-09 11:42:11.4937 Debug Error => blackhole
+2018-02-09 11:42:11.4937 Debug Fatal => blackhole
+2018-02-09 11:42:11.9491 Debug Targets for Microsoft.AspNetCore.Routing.Tree.TreeRouter by level:
+2018-02-09 11:42:11.9534 Debug Trace => blackhole
+2018-02-09 11:42:11.9534 Debug Debug => blackhole
+2018-02-09 11:42:11.9534 Debug Info => blackhole
+2018-02-09 11:42:11.9655 Debug Warn => blackhole
+2018-02-09 11:42:11.9655 Debug Error => blackhole
+2018-02-09 11:42:11.9655 Debug Fatal => blackhole
+2018-02-09 11:42:11.9861 Debug Targets for Microsoft.AspNetCore.Routing.RouteConstraintMatcher by level:
+2018-02-09 11:42:11.9861 Debug Trace => blackhole
+2018-02-09 11:42:11.9861 Debug Debug => blackhole
+2018-02-09 11:42:12.0056 Debug Info => blackhole
+2018-02-09 11:42:12.0056 Debug Warn => blackhole
+2018-02-09 11:42:12.0218 Debug Error => blackhole
+2018-02-09 11:42:12.0218 Debug Fatal => blackhole
+2018-02-09 11:42:12.0462 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler by level:
+2018-02-09 11:42:12.0533 Debug Trace => blackhole
+2018-02-09 11:42:12.0533 Debug Debug => blackhole
+2018-02-09 11:42:12.0533 Debug Info => blackhole
+2018-02-09 11:42:12.0689 Debug Warn => blackhole
+2018-02-09 11:42:12.0689 Debug Error => blackhole
+2018-02-09 11:42:12.0841 Debug Fatal => blackhole
+2018-02-09 11:42:12.1620 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor by level:
+2018-02-09 11:42:12.1620 Debug Trace => blackhole
+2018-02-09 11:42:12.1761 Debug Debug => blackhole
+2018-02-09 11:42:12.1761 Debug Info => blackhole
+2018-02-09 11:42:12.1761 Debug Warn => blackhole
+2018-02-09 11:42:12.1908 Debug Error => blackhole
+2018-02-09 11:42:12.1964 Debug Fatal => blackhole
