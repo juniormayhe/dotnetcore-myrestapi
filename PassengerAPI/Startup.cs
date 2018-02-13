@@ -12,6 +12,8 @@ namespace PassengerAPI
 {
     public class Startup
     {
+        const string IP_IDENTIYSERVER = "172.30.238.2";
+
         public IConfiguration _configuration { get; }
         public IHostingEnvironment _hostingEnvironment { get; }
 
@@ -34,8 +36,8 @@ namespace PassengerAPI
             services.AddAuthentication("Bearer")
                 .AddIdentityServerAuthentication(options =>
                 {
-                    //options.Authority = "http://localhost:5000";
-                    options.Authority = "http://172.30.225.93";
+                    //options.Authority = "http://localhost:5000";//sin docker
+                    options.Authority = $"http://{IP_IDENTIYSERVER}";
                     options.RequireHttpsMetadata = false;
                     
                     options.ApiName = "api1";

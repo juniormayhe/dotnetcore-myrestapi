@@ -6,15 +6,26 @@ services:
     build:
       context: .
       dockerfile: PassengerAPI\Dockerfile
-      
+    networks:
+      nat:
+        ipv4_address: 172.30.238.3
+
   identityapi:
     image: identityapi
     build:
       context: .
       dockerfile: IdentityAPI\Dockerfile
+    networks:
+      nat:
+        ipv4_address: 172.30.238.2
 
   resttestwebapp:
     image: resttestwebapp
     build:
       context: .
       dockerfile: RestTestWebApp\Dockerfile
+
+networks:
+  nat:
+    external: true
+      

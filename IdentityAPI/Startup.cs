@@ -38,7 +38,8 @@ namespace IdentityAPI
                 .AddIdentityServer()
                 .AddDeveloperSigningCredential()
                 .AddInMemoryApiResources(Config.GetApiResources())
-                .AddInMemoryClients(Config.GetClients());//creates temporary key for signing tokens
+                .AddInMemoryClients(Config.GetClients())
+                .AddTestUsers(Config.GetUsers()); //creates temporary key for signing tokens
             
             //load config from appsettings.json
             services.Configure<AppSettings>(_configuration.GetSection("AppSettings"));
